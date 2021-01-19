@@ -30,8 +30,7 @@
             "styles": [
               "src/app/core/preloader/preloader.scss",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "src/styles.scss",
-              "node_modules/@progress/kendo-theme-default/dist/all.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
