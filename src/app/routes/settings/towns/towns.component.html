@@ -1,0 +1,79 @@
+
+<div class="table-add  mb-4 mt-4">
+  <a class="btn btn-success btn-sm" (click)="open(content)">
+    <i class="fa  fa-plus"></i> Add New
+  </a>
+</div>
+<table class="table table-responsive-custom table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="Town Cord">Town</th>
+      <th scope="col">Town URL</th>
+      <th scope="col">Status</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let town of towns">
+      <td>
+        {{town.id}}
+      </td>
+      <td>
+        {{town.towncode}}
+      </td>
+      <td>{{town.townurl}}</td>
+      <td>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" [attr.checked]="town.active ? 'checked' : null"
+            class="custom-control-input" id="{{ 'customSwitches-' + town.id }}" />
+          <label class="custom-control-label" for="{{ 'customSwitches-' + town.id }}"></label>
+        </div>
+      </td>
+      <td align="right">
+          <input type="button" class="btn btn-primary btn-sm" value="Edit" (click)="open(content)" />
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="d-flex justify-content-between">
+  <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize"
+    (pageChange)="refreshWorkflows()">
+  </ngb-pagination>
+  <select class="custom-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshWorkflows()">
+    <option [ngValue]="10">10</option>
+    <option [ngValue]="15">15</option>
+    <option [ngValue]="20">20</option>
+  </select>
+</div>
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h6 class="modal-title" id="modal-basic-title">Add Town</h6>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="newTownCode">Town Code</label>
+        <input type="text" class="form-control" id="newTownCode" placeholder="Enter New Town Code">
+      </div>
+      <div class="form-group">
+        <label for="newTownURL">Town URL</label>
+        <input type="url" class="form-control" id="newTownURL" placeholder="Enter New Town URL">
+      </div>
+      <div class="form-group">
+        <label for="workflowStatus">Active</label>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input input-lg" id="activeTownSwitches">
+          <label class="custom-control-label" for="activeTownSwitches"></label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="modal.close('Save click')">Add</button>
+    <button type="button" class="btn btn-outline-dark">Cancel</button>
+  </div>
+</ng-template>

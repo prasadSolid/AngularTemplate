@@ -1,0 +1,325 @@
+// Bootstrap
+@import "../../bootstrap/functions";
+@import "../../bootstrap/variables";
+@import "../../bootstrap/mixins";
+@import '../../app/variables';
+
+// LAYOUT
+
+$panel-bg: #313d46;
+$border-color: #4f5d68;
+$main-text: #ced4da;
+$content-bg: #2a3137;
+
+
+$primary-color: #00578e;
+$secondary-color: #45515a;
+$success-color: #7db781;
+$info-color: #6193ad;
+$warning-color: #c19368;
+$danger-color: #d38787;
+$default-color: #3e484d;
+$primary-color-light: #14689c;
+$input-disabled-bg: #3a444c;
+
+
+// background
+.bg-primary{
+    background-color: $primary-color;
+}
+.bg-secondary {
+    background-color: $secondary-color;
+}
+.bg-success {
+    background-color: $success-color;
+}
+.bg-info {
+    background-color: $info-color;
+}
+.bg-warning {
+    background-color: $warning-color;
+}
+.bg-danger {
+    background-color: $danger-color;
+}
+
+// text
+.text-primary {
+    color: $primary-color;
+}
+.text-secondary {
+    color: $secondary-color;
+}
+.text-success {
+    color: $success-color;
+}
+.text-info {
+    color: $info-color;
+}
+.text-warning {
+    color: $warning-color;
+}
+.text-danger {
+    color: $danger-color;
+}
+
+// alert
+.alert-primary {
+    background-color: $primary-color;
+}
+.alert-secondary {
+    background-color: $secondary-color;
+}
+.alert-success {
+    background-color: $success-color;
+}
+.alert-info {
+    background-color: $info-color;
+}
+.alert-warning {
+    background-color: $warning-color;
+}
+.alert-danger {
+    background-color: $danger-color;
+}
+.alert-light{
+
+}
+.alert-dark{
+
+}
+.alert-link{
+
+}
+.alert-dismissible{
+
+}
+.alert-heading{
+    
+}
+
+//btn
+.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover{
+        background-color: darken($primary-color, 5%);
+        border-color: darken($primary-color, 5%);
+    }
+}
+.btn-secondary {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $main-text;
+    &:hover{
+        background-color: darken($secondary-color, 5%) !important;
+        border-color: darken($secondary-color, 5%);
+        color: $main-text;
+    }
+}
+.btn-default {
+    background-color: $default-color;
+    border-color: $border-color;
+    color: $main-text;
+}
+.btn-success {
+    background-color: $success-color;
+    border-color: $success-color;
+    &:hover{
+        background-color: darken($success-color, 10%);
+        border-color: darken($success-color, 10%);
+    }
+}
+.btn-info {
+    background-color: $info-color;
+    border-color: $info-color;
+    &:hover{
+        background-color: darken($info-color, 10%);
+        border-color: darken($info-color, 10%);
+    }
+}
+.btn-warning {
+    background-color: $warning-color;
+    border-color: $warning-color;
+    &:hover {
+        background-color: darken($warning-color, 10%);
+        border-color: darken($warning-color, 10%);
+    }
+}
+.btn-danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+    &:hover {
+        background-color: darken($danger-color, 10%);
+        border-color: darken($danger-color, 10%);
+    }
+}
+.btn-light{
+
+}
+.btn-dark{
+
+}
+.btn-link{
+
+}
+.btn-outline-primary{
+    color: $primary-color-light;
+    border-color: $primary-color-light;
+    &:hover{
+        background-color: $primary-color;
+        border-color: $primary-color;
+        color: $main-text;
+    }
+}
+.btn-outline-secondary{
+    color: $main-text;
+    border-color: $secondary-color !important;
+    &:hover{
+        background-color: $secondary-color !important;
+        border-color: $secondary-color;
+        color: $main-text;
+    }
+}
+.btn-outline-success{
+    color: $success-color;
+    border-color: $success-color;
+    &:hover{
+        background-color: $success-color;
+        border-color: $success-color;
+        color: $main-text;
+    }
+}
+.btn-outline-info{
+    color: $info-color;
+    border-color: $info-color;
+    &:hover {
+        background-color: $info-color;
+        border-color: $info-color;
+        color: $main-text;
+    }
+}
+.btn-outline-warning{
+    color: $warning-color;
+    border-color: $warning-color;
+    &:hover {
+        background-color: $warning-color;
+        border-color: $warning-color;
+        color: $main-text;
+    }
+}
+.btn-outline-danger{
+    color: $danger-color;
+    border-color: $danger-color;
+    &:hover {
+        background-color: $danger-color;
+        border-color: $danger-color;
+        color: $main-text;
+    }
+}
+.btn-outline-light{
+
+}
+.btn-outline-dark{
+
+}
+
+//badge
+.badge-primary {
+    background-color: $primary-color;
+}
+.badge-secondary {
+    background-color: $secondary-color;
+}
+.badge-default {
+    background-color: $default-color;
+}
+.badge-success {
+    background-color: $success-color;
+}
+.badge-info {
+    background-color: $info-color;
+}
+.badge-warning {
+    background-color: $warning-color;
+}
+.badge-danger {
+    background-color: $danger-color;
+}
+.badge-light{
+
+}
+.badge-dark{
+
+}
+
+
+//pagination
+.page-item{
+    .page-link{
+        background-color: $secondary-color;
+        border-color: $border-color;
+        color: $primary-color-light;
+    }
+}
+.page-item.active{
+    .page-link{
+        background-color: $primary-color;
+        border-color: $primary-color;
+    }
+}
+.page-item.disabled  {
+    .page-link{
+        color: $main-text;
+        background-color: $secondary-color;
+        border-color: $border-color;
+    }
+}
+
+//card
+.card {
+    background-color:   $panel-bg;
+    border: 1px solid $border-color;
+    .card-header{
+        background-color: $secondary-color;
+    }
+}
+
+
+//Forms
+.form-control{
+    background-color: $content-bg;
+    border-color: $border-color;
+    &:disabled,
+    &[readonly] {
+        background-color:$input-disabled-bg;
+    }
+}
+
+//fieldset
+fieldset{
+    border-color: $border-color;
+}
+
+
+//nav
+.nav-tabs{
+    .nav-item{
+        .nav-link.active,
+        .show>.nav-link {
+            background-color: lighten($panel-bg, 5%);
+            color: $primary-color-light;
+        }
+    }
+}
+.input-group-text{
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    color: $main-text;  
+}
+
+//jumbotron
+.jumbotron {
+    background-color: $panel-bg;
+    border: 1px solid $border-color;
+}

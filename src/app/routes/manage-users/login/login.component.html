@@ -1,0 +1,43 @@
+<div class="login-container align-middle">
+    <div id="login" class="w-100">
+        <div class="row workflow-login-container">
+            <div class="col workflow-login">
+                <div id="" class="d-flex  flex-sm-row flex-column justify-content-center align-items-center login-panel shadow">
+                    <div class="align-self-stretch p-2  login-image-container text-center flex-fill">
+                        <div class="flex-column">
+                            <div class="p-2">
+                                <span class="title-workflow mt-3"><img src="assets/imges/workflow-login.svg" alt="" height="66"></span>
+                            </div>
+                            <div class="d-flex justify-content-center login-banner">
+                            </div>
+                    </div>
+                    </div>
+                    <div id="" class="align-self-stretch p-2 flex-fill ">
+                        <div id="" class="flex-column">
+                            <div class="w-100 text-center p-2 ">
+                                <a href="#"><img s alt="" width="210"></a>
+                            </div>
+                            <form id="" class="form mt-5 m-3" action="">
+                                <div class="form-group mt-2">
+                                    <i class="fa fa-user input-icon" aria-hidden="true"></i>
+                                    <input [(ngModel)] = "userVM.UserName" type="text" name="username" id="username" class="form-control login-input" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock form-control-feedback input-icon" aria-hidden="true"></i>
+                                    <input [(ngModel)] = "userVM.Password" type="text" name="password" id="password" class="form-control login-input" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="remember-me" sclass=""><span class="text-muted small">Rememberme</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label>
+                                    <div><input (click)="loginUser(userVM)" type="submit" name="submit" class="btn btn-primary btn-sm" value="Login"></div>
+                                </div>
+                                <div id="register-link" class="text-right">
+                                    <a href="#" class="text-info small">Register here</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+i {
+  position: absolute;
+  margin: 5px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+
+#username,
+#password {
+  padding-left: 25px;
+  height: 20px;
+}
+.login-banner {
+  background-image: url("/assets/imges/banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.login-container {
+    color: #f9fafc;
+}
