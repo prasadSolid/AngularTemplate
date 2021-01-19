@@ -1,4 +1,4 @@
-# Ng2angle
+# Townsuite Bootstrap 4 (Angular 10)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
 
