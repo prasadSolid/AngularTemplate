@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  public range = { start: null, end: null };
   public listItemsautocomplete: Array<string> = [
     'Albania',
     'Andorra',
@@ -60,8 +59,9 @@ export class InputComponent implements OnInit {
     'United Kingdom',
     'Vatican City'
     ];
-
-
+    public listItemscombobox: Array<string> = ['Baseball', 'Basketball', 'Cricket', 'Field Hockey', 'Football', 'Table Tennis', 'Tennis', 'Volleyball'];
+    public listItemsdropdownlist: Array<string> = ['X-Small', 'Small', 'Medium', 'Large', 'X-Large', '2X-Large'];
+    public listItemsmultiselect: Array<string> = ['Baseball', 'Basketball', 'Cricket', 'Field Hockey', 'Football', 'Table Tennis', 'Tennis', 'Volleyball'];
 
 
 
