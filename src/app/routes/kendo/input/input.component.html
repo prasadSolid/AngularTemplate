@@ -1,1 +1,89 @@
-<p>input works!</p>
+<div class="content-heading">
+   <div>Kendi Input Elements</div>
+</div>
+<div class="row">
+   <div class="col-xl-6">
+       <div class="card card-default">
+          <div class="card-header">Date Picker</div>
+          <div class="card-body">
+             <kendo-calendar></kendo-calendar>            
+          </div>
+       </div>         
+    </div>
+    <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">Date range</div>
+        <div class="card-body">
+           <div class="example-config">
+              Selected range: {{ range | json }}
+          </div>
+          <kendo-multiviewcalendar
+              kendoDateRangeSelection
+              [(selectionRange)]="range"
+          ></kendo-multiviewcalendar>
+        </div>
+     </div>         
+  </div>
+  <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">Date Time Picker</div>
+        <div class="card-body">
+           <kendo-datetimepicker
+           [format]="format"
+           [(value)]="value"
+       >
+       </kendo-datetimepicker>
+        </div>
+     </div>         
+  </div>
+  <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">Time Picker</div>
+        <div class="card-body">
+           <kendo-timepicker
+           [(value)]="value"
+       ></kendo-timepicker>
+        </div>
+     </div>         
+  </div>
+  <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">AutoComplete </div>
+        <div class="card-body">
+           <kendo-autocomplete
+              [data]="listItems"
+              [placeholder]="'e.g. Denmark'"
+              class="countries"
+        >
+        </kendo-autocomplete>
+        </div>
+     </div>         
+  </div>
+  <!-- <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">combobox </div>
+        <div class="card-body">
+           <kendo-combobox [data]="listItemscombobox" [allowCustom]="allowCustom">
+           </kendo-combobox>
+        </div>
+     </div>         
+  </div> -->
+  <!-- <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">dropdownlist </div>
+        <div class="card-body">
+           <kendo-dropdownlist [data]="listItemsdropdownlist">
+           </kendo-dropdownlist>
+        </div>
+     </div>         
+  </div> -->
+  <!-- <div class="col-xl-6">
+     <div class="card card-default">
+        <div class="card-header">  multiselect </div>
+        <div class="card-body">
+           <kendo-multiselect [data]="listItemsmultiselect" [(ngModel)]="value"></kendo-multiselect>
+        </div>
+     </div>         
+  </div> -->
+</div>
+
