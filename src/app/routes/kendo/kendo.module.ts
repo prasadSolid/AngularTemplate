@@ -8,11 +8,13 @@ import { DatagridComponent } from './datagrid/datagrid.component';
 import { DropdownsComponent } from './dropdowns/dropdowns.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { LabelModule } from '@progress/kendo-angular-label';
-
+import { EditorModule } from '@progress/kendo-angular-editor';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import { GridModule } from '@progress/kendo-angular-grid';
+import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 
 
 const routes: Routes = [
@@ -34,9 +36,15 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     LabelModule,
+    EditorModule,
+    ChartsModule,
+    GridModule, 
+    SchedulerModule,
 
+    
     RouterModule.forChild(routes),
   ],
+  
   exports: [
         RouterModule
   ]

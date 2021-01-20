@@ -13,6 +13,18 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { RoutesModule } from './routes/routes.module';
+import { EditorModule } from '@progress/kendo-angular-editor';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import 'hammerjs';
+import { SchedulerModule } from '@progress/kendo-angular-scheduler';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+
+
+
+
+
+
 
 // https://github.com/ocombe/ng2-translate/issues/218
 export function createTranslateLoader(http: HttpClient) {
@@ -38,7 +50,12 @@ export function createTranslateLoader(http: HttpClient) {
                 useFactory: (createTranslateLoader),
                 deps: [HttpClient]
             }
-        })
+        }),
+        EditorModule,
+        ChartsModule,
+        SchedulerModule,
+        DropDownsModule,
+        InputsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
