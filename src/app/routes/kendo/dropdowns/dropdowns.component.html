@@ -1,14 +1,45 @@
 <div class="content-heading">
-    <div>Kendi Dropdown</div>
+    <div>Kendo Dropdown</div>
 </div>
 <div class="row">
     <div class="col-xl-6">
         <div class="card card-default">
-           <div class="card-header">Date Picker</div>
+           <div class="card-header">AutoComplete </div>
            <div class="card-body">
-              <kendo-calendar></kendo-calendar>            
+                <kendo-autocomplete
+                [data]="listItemsautocomplete"
+                [placeholder]="'e.g. Denmark'"
+                class="countries"
+            >
+            </kendo-autocomplete>
            </div>
         </div>         
      </div>
+    <!-- <div class="col-xl-6">
+        <div class="card card-default">
+           <div class="card-header">Combobox </div>
+           <div class="card-body">
+              <kendo-combobox [data]="listItemscombobox" [allowCustom]="allowCustom">
+              </kendo-combobox>
+           </div>
+        </div>         
+     </div>
+     <div class="col-xl-6">
+        <div class="card card-default">
+           <div class="card-header">Dropdown List </div>
+           <div class="card-body">
+              <kendo-dropdownlist [data]="listItemsdropdownlist">
+              </kendo-dropdownlist>
+           </div>
+        </div>         
+     </div>     
+     <div class="col-xl-6">
+        <div class="card card-default">
+           <div class="card-header">  Multiselect </div>
+           <div class="card-body">
+              <kendo-multiselect [data]="listItemsmultiselect" [(ngModel)]="value"></kendo-multiselect>
+           </div>
+        </div>         
+     </div> -->
 </div>
 
