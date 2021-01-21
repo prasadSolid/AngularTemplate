@@ -1,0 +1,30 @@
+// Sweet alert
+.swal-modal {
+    background-color: $panel-bg;
+    .swal-title {
+        color: $main-text;
+    }
+    .swal-text {
+        color: $main-text;
+    }  
+    .swal-footer {
+        .swal-button {
+            &.swal-button--confirm {
+                background-color: $success-color;
+                border-color: $success-color;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            &.swal-button--cancel {
+                background-color: $secondary-color;
+                color: $main-text;
+            }
+            &.swal-button--confirm {
+                &.bg-danger:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }  
+}
