@@ -24,58 +24,72 @@ export class InputComponent implements OnInit {
             <li>Identical HTML output across browsers</li>
         </ul>
     `;
-    public listItemsautocomplete: Array<string> = [
-      'Albania',
-      'Andorra',
-      'Armenia',
-      'Austria',
-      'Azerbaijan',
-      'Belarus',
-      'Belgium',
-      'Bosnia & Herzegovina',
-      'Bulgaria',
-      'Croatia',
-      'Cyprus',
-      'Czech Republic',
-      'Denmark',
-      'Estonia',
-      'Finland',
-      'France',
-      'Georgia',
-      'Germany',
-      'Greece',
-      'Hungary',
-      'Iceland',
-      'Ireland',
-      'Italy',
-      'Kosovo',
-      'Latvia',
-      'Liechtenstein',
-      'Lithuania',
-      'Luxembourg',
-      'Macedonia',
-      'Malta',
-      'Moldova',
-      'Monaco',
-      'Montenegro',
-      'Netherlands',
-      'Norway',
-      'Poland',
-      'Portugal',
-      'Romania',
-      'Russia',
-      'San Marino',
-      'Serbia',
-      'Slovakia',
-      'Slovenia',
-      'Spain',
-      'Sweden',
-      'Switzerland',
-      'Turkey',
-      'Ukraine',
-      'United Kingdom',
-      'Vatican City'
-      ];
+    
+    
+  // Color picker
+  public preventOpen: boolean;
+    public preventClose: boolean;
+
+    public handlePreventableEvent(eventName: string, eventArgs: Event, shouldPrevent: boolean): void {
+        if (shouldPrevent) {
+            eventArgs.preventDefault();
+            console.log(`${eventName} prevented`);
+
+            return;
+        }
+
+        console.log(eventName);
+    }
+
+    public log(eventName: string, eventArgs: any): void {
+        console.log(eventName, eventArgs);
+    }
+    
+  // MaskedTextBox 
+  public value = '359884123321';
+  public mask = '(999) 000-00-00-00';
+
+  // numeric Textbox
+  public autoCorrect = false;
+  public valuenumerictextbox = 5;
+  public percentage = 0.7;
+  public formatOptions: any = {
+      style: 'currency',
+      currency: 'EUR',
+      currencyDisplay: 'name'
+  };
+
+  // Slider
+  public valueHorizontal = 0;
+  public valuesVertical: number[] = [10, 5, 0, 10, 15];
+  public min = -20;
+  public max = 20;
+  public largeStep = 20;
+  public smallStep = 1;
+  
+  // Range Slider
+  public valuerangeslider: [number, number] = [50, 100];
+  public minrangeslider = 0;
+  public maxrangeslider = 200;
+  public largeSteprangeslider = 2;
+  public smallSteprangeslider = 20;
+  public verticalrangeslider = true;
+  // orientation  
+  public vertical = true;
+  public valueorientation: [number, number] = [3, 5];
+  public minorientation = 0;
+  public maxorientation = 10;
+  public largeSteporientation = 2;
+
+  // Switch
+  public checked = true;
+
+ 
+
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {

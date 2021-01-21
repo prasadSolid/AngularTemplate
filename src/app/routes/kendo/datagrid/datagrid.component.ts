@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatagridComponent implements OnInit {
 
-  
   constructor() { }
 
   ngOnInit(): void {

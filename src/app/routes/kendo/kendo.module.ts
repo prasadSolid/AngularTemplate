@@ -15,7 +15,7 @@ import { EditorModule } from '@progress/kendo-angular-editor';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
-
+import { InputsModule } from '@progress/kendo-angular-inputs';
 
 const routes: Routes = [
     { path: '', component: InputComponent },
@@ -40,7 +40,7 @@ const routes: Routes = [
     ChartsModule,
     GridModule, 
     SchedulerModule,
-
+    InputsModule,
     
     RouterModule.forChild(routes),
   ],
