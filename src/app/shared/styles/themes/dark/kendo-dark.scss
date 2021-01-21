@@ -24,23 +24,24 @@ $series-e: #db8f71;
 $series-f: #d38787;
 $shadow:#212529;
 $link:#446fa7;
+$bar-color:#303a42;
 
 
 .k-text-selection {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color: $text-color;
   }
 }
 
 .k-block {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color: $text-color;
   }
 
   border-radius: .25rem;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
   padding: .75rem 1.25rem;
@@ -51,9 +52,9 @@ $link:#446fa7;
   >.k-header {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     margin: -.75rem -1.25rem .75rem;
     padding: .75rem 1.25rem;
   }
@@ -62,11 +63,11 @@ $link:#446fa7;
 .k-panel {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color: $text-color;
   }
 
   border-radius: .25rem;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
   padding: .75rem 1.25rem;
@@ -77,9 +78,9 @@ $link:#446fa7;
   >.k-header {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     margin: -.75rem -1.25rem .75rem;
     padding: .75rem 1.25rem;
   }
@@ -88,7 +89,7 @@ $link:#446fa7;
 .k-pane-wrapper {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-listgroup {
@@ -97,7 +98,7 @@ $link:#446fa7;
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -146,11 +147,11 @@ $link:#446fa7;
       }
 
       .k-time-period {
-        color: #fff;
+        color:$text-color;
       }
 
       .k-mobile-scheduler-agendaweekday {
-        color: #fff;
+        color:$text-color;
       }
 
       .k-scheduler-header-wrap {
@@ -181,7 +182,7 @@ $link:#446fa7;
 
     .k-grid-edit-form {
       .k-header {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
 
         .k-link {
@@ -216,7 +217,7 @@ $link:#446fa7;
 
     .k-grid-column-menu {
       .k-header {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
 
         .k-link {
@@ -251,7 +252,7 @@ $link:#446fa7;
 
     .k-grid-filter-menu {
       .k-header {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
 
         .k-link {
@@ -286,7 +287,7 @@ $link:#446fa7;
 
     .k-scheduler-edit-form {
       .k-header {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
 
         .k-link {
@@ -335,10 +336,10 @@ $link:#446fa7;
 .k-view {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -346,7 +347,7 @@ $link:#446fa7;
 .k-progressbar {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-item {
@@ -358,7 +359,7 @@ $link:#446fa7;
   background-color: #e9ecef;
 
   .k-state-selected {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 }
@@ -366,7 +367,7 @@ $link:#446fa7;
 .k-numerictextbox {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-numeric-wrap {
@@ -376,12 +377,12 @@ $link:#446fa7;
 
     .k-select {
       border-color: $secondary;
-      color: #fff;
+      color:$text-color;
       background-color: $secondary;
 
       &:hover {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
       }
 
@@ -401,7 +402,7 @@ $link:#446fa7;
     &:hover {
       .k-select {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
       }
     }
@@ -410,7 +411,7 @@ $link:#446fa7;
   .k-numeric-wrap.k-state-hover {
     .k-select {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
@@ -438,10 +439,10 @@ $link:#446fa7;
 .k-flatcolorpicker {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -501,7 +502,7 @@ $link:#446fa7;
 .k-combobox {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-dropdown-wrap {
@@ -553,7 +554,7 @@ $link:#446fa7;
 
   .k-select {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
   }
 
@@ -561,7 +562,7 @@ $link:#446fa7;
     &:hover {
       .k-select {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
       }
     }
@@ -570,7 +571,7 @@ $link:#446fa7;
   .k-state-hover {
     .k-select {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
@@ -590,7 +591,7 @@ $link:#446fa7;
 
     .k-select {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
@@ -599,23 +600,23 @@ $link:#446fa7;
 .k-datepicker {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-select {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     >.k-state-selected {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -623,7 +624,7 @@ $link:#446fa7;
 
     >.k-state-active {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -632,7 +633,7 @@ $link:#446fa7;
 
   .k-select.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -663,7 +664,7 @@ $link:#446fa7;
 
     .k-select {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
@@ -762,23 +763,23 @@ $link:#446fa7;
 .k-timepicker {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-select {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     >.k-state-selected {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -786,7 +787,7 @@ $link:#446fa7;
 
     >.k-state-active {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -795,7 +796,7 @@ $link:#446fa7;
 
   .k-select.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -826,7 +827,7 @@ $link:#446fa7;
 
     .k-select {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
@@ -925,7 +926,7 @@ $link:#446fa7;
 .k-datetimepicker {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-link {
@@ -933,14 +934,14 @@ $link:#446fa7;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-link.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -971,7 +972,7 @@ $link:#446fa7;
 
     .k-select {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
@@ -992,12 +993,12 @@ $link:#446fa7;
 
   .k-select {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     >.k-state-selected {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -1005,7 +1006,7 @@ $link:#446fa7;
 
     >.k-state-active {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -1092,20 +1093,20 @@ $link:#446fa7;
 .k-dateinput {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-link {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-link.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -1154,12 +1155,12 @@ $link:#446fa7;
 
   .k-select {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     >.k-state-selected {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -1167,7 +1168,7 @@ $link:#446fa7;
 
     >.k-state-active {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       color: #8594a3;
       box-shadow: inset;
@@ -1252,7 +1253,7 @@ $link:#446fa7;
 
   .k-link.k-state-selected {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 }
@@ -1260,31 +1261,31 @@ $link:#446fa7;
 .k-dropdown {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-dropdown-wrap {
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-dropdown-wrap.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-dropdown-wrap.k-state-focused {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: 0 0 0 3px rgba(69, 81, 90, 0.5);
   }
@@ -1305,31 +1306,31 @@ $link:#446fa7;
 .k-dropdowntree {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-dropdown-wrap {
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-dropdown-wrap.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-dropdown-wrap.k-state-focused {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: 0 0 0 3px rgba(69, 81, 90, 0.5);
   }
@@ -1354,14 +1355,14 @@ $link:#446fa7;
     li.k-button {
       &:active {
         border-color: #293136;
-        color: #fff;
+        color:$text-color;
         background-color: #2f373d;
       }
     }
 
     li.k-button.k-state-active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
 
@@ -1400,7 +1401,7 @@ $link:#446fa7;
 .k-multiselect {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-multiselect-wrap {
@@ -1411,14 +1412,14 @@ $link:#446fa7;
     li.k-button {
       &:active {
         border-color: #293136;
-        color: #fff;
+        color:$text-color;
         background-color: #2f373d;
       }
     }
 
     li.k-button.k-state-active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
 
@@ -1457,7 +1458,7 @@ $link:#446fa7;
 .k-maskedtextbox {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-i-warning {
@@ -1468,7 +1469,7 @@ $link:#446fa7;
 .k-rating {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   color: $text-color;
@@ -1477,10 +1478,10 @@ $link:#446fa7;
 .k-window {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -1488,10 +1489,10 @@ $link:#446fa7;
 .k-drawer {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -1499,10 +1500,10 @@ $link:#446fa7;
 .k-notification {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -1510,10 +1511,10 @@ $link:#446fa7;
 .k-breadcrumb {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -1579,36 +1580,36 @@ $link:#446fa7;
 .k-pager-wrap {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-link {
     background-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   select.k-dropdown {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
 
     &:hover {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: #181c20;
     }
   }
 
   select.k-dropdowntree {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
 
     &:hover {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: #181c20;
     }
@@ -1616,19 +1617,19 @@ $link:#446fa7;
 
   .k-dropdown {
     .k-dropdown-wrap {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: $body-bg;
 
       &:hover {
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: #181c20;
       }
     }
 
     .k-dropdown-wrap.k-state-hover {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: #181c20;
     }
@@ -1636,32 +1637,32 @@ $link:#446fa7;
 
   .k-dropdowntree {
     .k-dropdown-wrap {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: $body-bg;
 
       &:hover {
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: #181c20;
       }
     }
 
     .k-dropdown-wrap.k-state-hover {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: #181c20;
     }
   }
 
   select.k-dropdown.k-state-hover {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: #181c20;
   }
 
   select.k-state-hover.k-dropdowntree {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: #181c20;
   }
@@ -1670,7 +1671,7 @@ $link:#446fa7;
 .k-card {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   >.k-hr {
@@ -1685,10 +1686,10 @@ $link:#446fa7;
 .k-splitter {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -1696,14 +1697,14 @@ $link:#446fa7;
 .k-spreadsheet {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-tabstrip-wrapper {
     border-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -1752,7 +1753,7 @@ $link:#446fa7;
 .k-scheduler {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   table {
@@ -1791,7 +1792,7 @@ $link:#446fa7;
     border-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -1807,7 +1808,7 @@ $link:#446fa7;
 .k-chat {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-message.k-state-selected {
@@ -1826,7 +1827,7 @@ $link:#446fa7;
 
     border-color: inherit;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
 
     .k-scroll-button {
       background-color: $body-bg;
@@ -1838,13 +1839,13 @@ $link:#446fa7;
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
   .k-bubble {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
     box-shadow: none;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -1855,7 +1856,7 @@ $link:#446fa7;
   .k-alt {
     .k-bubble {
       border-color: $primary;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
       box-shadow: none;
     }
@@ -1868,7 +1869,7 @@ $link:#446fa7;
 
     &:hover {
       border-color: $primary;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
   }
@@ -1893,10 +1894,10 @@ $link:#446fa7;
 .k-mediaplayer {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -1904,7 +1905,7 @@ $link:#446fa7;
 .k-pdf-viewer {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
   .k-toolbar {
@@ -1934,13 +1935,13 @@ $link:#446fa7;
       }
     }
 
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #fff;
-    box-shadow: 0 0 15px #495057;
+    background-color:$text-color;
+    box-shadow: 0 0 15px $border-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -1956,10 +1957,10 @@ $link:#446fa7;
 kendo-scrollview.k-scrollview-wrap {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -1979,10 +1980,10 @@ kendo-scrollview.k-scrollview-wrap {
 div.k-scrollview {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -2002,10 +2003,10 @@ div.k-scrollview {
 .k-chart {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: rgba(0, 0, 0, 0);
 
@@ -2017,10 +2018,10 @@ div.k-scrollview {
 .k-sparkline {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: rgba(0, 0, 0, 0);
 
@@ -2032,10 +2033,10 @@ div.k-scrollview {
 .k-stockchart {
   &::selection {
     background-color: $primary;
-    color: #fff;
+    color:$text-color;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: rgba(0, 0, 0, 0);
 
@@ -2045,13 +2046,13 @@ div.k-scrollview {
 }
 
 .k-content {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
 
 .k-hr {
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-dirty {
@@ -2124,7 +2125,7 @@ div.k-scrollview {
 
   .k-calendar {
     .k-calendar-navigation {
-      box-shadow: inset 1px 0 #495057;
+      box-shadow: inset 1px 0 $border-color;
     }
   }
 
@@ -2177,7 +2178,7 @@ div.k-scrollview {
 
 .k-drag-clue {
   border-color: #003251;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
@@ -2231,49 +2232,49 @@ div.k-scrollview {
 
 .k-avatar-solid.k-avatar-primary {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
 .k-avatar-solid.k-avatar-secondary {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 }
 
 .k-avatar-solid.k-avatar-tertiary {
   border-color: #6f42c1;
-  color: #fff;
+  color:$text-color;
   background-color: #6f42c1;
 }
 
 .k-avatar-solid.k-avatar-info {
   border-color: $info;
-  color: #fff;
+  color:$text-color;
   background-color: $info;
 }
 
 .k-avatar-solid.k-avatar-success {
   border-color: $success;
-  color: #fff;
+  color:$text-color;
   background-color: $success;
 }
 
 .k-avatar-solid.k-avatar-warning {
   border-color: $warning;
-  color: #fff;
+  color:$text-color;
   background-color: $warning;
 }
 
 .k-avatar-solid.k-avatar-error {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
 .k-avatar-solid.k-avatar-dark {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 }
 
@@ -2285,13 +2286,13 @@ div.k-scrollview {
 
 .k-avatar-solid.k-avatar-inverse {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 }
 
 .k-avatar-solid.k-avatar-danger {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
@@ -2365,49 +2366,49 @@ div.k-scrollview {
 
 .k-badge-solid.k-badge-primary {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
 .k-badge-solid.k-badge-secondary {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 }
 
 .k-badge-solid.k-badge-tertiary {
   border-color: #6f42c1;
-  color: #fff;
+  color:$text-color;
   background-color: #6f42c1;
 }
 
 .k-badge-solid.k-badge-info {
   border-color: $info;
-  color: #fff;
+  color:$text-color;
   background-color: $info;
 }
 
 .k-badge-solid.k-badge-success {
   border-color: $success;
-  color: #fff;
+  color:$text-color;
   background-color: $success;
 }
 
 .k-badge-solid.k-badge-warning {
   border-color: $warning;
-  color: #fff;
+  color:$text-color;
   background-color: $warning;
 }
 
 .k-badge-solid.k-badge-error {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
 .k-badge-solid.k-badge-dark {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 }
 
@@ -2419,13 +2420,13 @@ div.k-scrollview {
 
 .k-badge-solid.k-badge-inverse {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 }
 
 .k-badge-solid.k-badge-danger {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
@@ -2535,8 +2536,8 @@ div.k-scrollview {
 }
 
 .k-loader-container-panel {
-  background-color: #fff;
-  border-color: #495057;
+  background-color:$text-color;
+  border-color: $border-color;
 }
 
 .k-selection-single {
@@ -2556,7 +2557,7 @@ div.k-scrollview {
 .k-selection-multiple {
   >.k-chip-has-icon.k-chip-selected {
     .k-selected-icon-wrapper {
-      color: #fff;
+      color:$text-color;
       background-color: rgba(0, 0, 0, 0.36);
     }
   }
@@ -2700,12 +2701,12 @@ div.k-scrollview {
   border-color 0.2s ease-in-out,
   box-shadow 0.2s ease-in-out;
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -2715,7 +2716,7 @@ div.k-scrollview {
 
   &:active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: inset;
   }
@@ -2729,7 +2730,7 @@ div.k-scrollview {
   .k-button {
     &:active {
       border-color: #00304e;
-      color: #fff;
+      color:$text-color;
       background-color: #00385b;
       box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
     }
@@ -2741,14 +2742,14 @@ div.k-scrollview {
 
   .k-button.k-state-active {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
   }
 
   .k-button.k-state-selected {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -2756,7 +2757,7 @@ div.k-scrollview {
   >input[type="radio"] {
     &:checked+.k-button {
       border-color: #00304e;
-      color: #fff;
+      color:$text-color;
       background-color: #00385b;
       box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
     }
@@ -2769,7 +2770,7 @@ div.k-scrollview {
   >input[type="checkbox"] {
     &:checked+.k-button {
       border-color: #00304e;
-      color: #fff;
+      color:$text-color;
       background-color: #00385b;
       box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
     }
@@ -3146,7 +3147,7 @@ div.k-scrollview {
 
 .k-button.k-state-hover {
   border-color: #2f373d;
-  color: #fff;
+  color:$text-color;
   background-color: #343e44;
 }
 
@@ -3156,26 +3157,26 @@ div.k-scrollview {
 
 .k-button.k-state-active {
   border-color: #293136;
-  color: #fff;
+  color:$text-color;
   background-color: #2f373d;
   box-shadow: inset;
 }
 
 .k-button.k-state-selected {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
   box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .k-button.k-primary {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 
   &:hover {
     border-color: #00385b;
-    color: #fff;
+    color:$text-color;
     background-color: #004068;
   }
 
@@ -3185,7 +3186,7 @@ div.k-scrollview {
 
   &:active {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -3193,7 +3194,7 @@ div.k-scrollview {
 
 .k-button.k-primary.k-state-hover {
   border-color: #00385b;
-  color: #fff;
+  color:$text-color;
   background-color: #004068;
 }
 
@@ -3203,14 +3204,14 @@ div.k-scrollview {
 
 .k-button.k-primary.k-state-active {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
   box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .k-button.k-primary.k-state-selected {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
   box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 }
@@ -3236,7 +3237,7 @@ div.k-scrollview {
 
   &:active {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 
@@ -3256,7 +3257,7 @@ div.k-scrollview {
 
 .k-toggle-button.k-state-active {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
   box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
 
@@ -3285,7 +3286,7 @@ div.k-scrollview {
   .k-button {
     &:active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
       box-shadow: inset;
     }
@@ -3293,16 +3294,16 @@ div.k-scrollview {
 
   .k-button.k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: inset;
   }
 }
 
 .k-button.k-outline.k-state-hover {
-  border-color: #fff;
+  border-color:$text-color;
   color: #000;
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-button.k-outline.k-state-focused {
@@ -3310,15 +3311,15 @@ div.k-scrollview {
 }
 
 .k-button.k-outline.k-state-active {
-  border-color: #fff;
+  border-color:$text-color;
   color: #000;
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-button.k-outline.k-state-selected {
-  border-color: #fff;
+  border-color:$text-color;
   color: #000;
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-button.k-primary.k-outline {
@@ -3329,7 +3330,7 @@ div.k-scrollview {
 
   &:hover {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
@@ -3339,7 +3340,7 @@ div.k-scrollview {
 
   &:active {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
     box-shadow: none;
   }
@@ -3347,7 +3348,7 @@ div.k-scrollview {
 
 .k-button.k-primary.k-outline.k-state-hover {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
@@ -3357,14 +3358,14 @@ div.k-scrollview {
 
 .k-button.k-primary.k-outline.k-state-active {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
   box-shadow: none;
 }
 
 .k-button.k-primary.k-outline.k-state-selected {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
   box-shadow: none;
 }
@@ -3440,28 +3441,28 @@ div.k-scrollview {
   color: #6c757d;
 
   &:hover {
-    color: #fff;
+    color:$text-color;
   }
 
   &:active {
-    color: #fff;
+    color:$text-color;
   }
 
   &:focus {
-    color: #fff;
+    color:$text-color;
   }
 }
 
 .k-button.k-button-clear.k-state-hover {
-  color: #fff;
+  color:$text-color;
 }
 
 .k-button.k-button-clear.k-state-active {
-  color: #fff;
+  color:$text-color;
 }
 
 .k-button.k-button-clear.k-state-focused {
-  color: #fff;
+  color:$text-color;
 
   &::after {
     background-color: #6c757d;
@@ -3508,13 +3509,13 @@ div.k-scrollview {
     box-shadow: none;
 
     &:hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
       background-image: none;
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
       background-image: none;
     }
@@ -3543,14 +3544,14 @@ div.k-scrollview {
 
   .k-button.k-state-active {
     box-shadow: none;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
     background-image: none;
   }
 
   .k-button.k-state-hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
     background-image: none;
   }
 
@@ -3576,7 +3577,7 @@ div.k-scrollview {
 
     .k-button {
       border-color: $secondary;
-      color: #fff;
+      color:$text-color;
       background-color: $secondary;
     }
   }
@@ -3615,36 +3616,36 @@ div.k-scrollview {
 
   >kendo-list {
     >.k-first {
-      border-bottom-color: #495057;
+      border-bottom-color: $border-color;
     }
   }
 
   >.k-group-header {
-    border-bottom-color: #495057;
+    border-bottom-color: $border-color;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.06);
-    border-bottom-color: #495057;
+    border-bottom-color: $border-color;
     box-shadow: none;
   }
 
   .k-outer-group-header.k-first {
-    border-bottom-color: #495057;
+    border-bottom-color: $border-color;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.06);
-    border-color: #495057;
+    border-color: $border-color;
     box-shadow: none;
   }
 
   >.k-virtual-wrap {
     >.k-group-header {
-      border-bottom-color: #495057;
+      border-bottom-color: $border-color;
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.06);
-      border-bottom-color: #495057;
+      border-bottom-color: $border-color;
       box-shadow: none;
     }
   }
 
   .k-outer-group-header {
-    border-bottom-color: #495057;
-    border-top-color: #495057;
+    border-bottom-color: $border-color;
+    border-top-color: $border-color;
     color: #6c757d;
   }
 
@@ -3694,7 +3695,7 @@ div.k-scrollview {
   >.k-list {
     >.k-item.k-first {
       &::before {
-        border-color: #495057;
+        border-color: $border-color;
       }
     }
   }
@@ -3702,17 +3703,17 @@ div.k-scrollview {
 
 .k-list {
   >.k-outer-group-header {
-    border-color: #495057;
+    border-color: $border-color;
   }
 
   .k-item {
     &:hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     &:hover.k-state-selected {
-      color: #fff;
+      color:$text-color;
       background-color: #005083;
     }
 
@@ -3735,12 +3736,12 @@ div.k-scrollview {
   }
 
   .k-item.k-state-hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   .k-item.k-state-hover.k-state-selected {
-    color: #fff;
+    color:$text-color;
     background-color: #005083;
   }
 
@@ -3754,7 +3755,7 @@ div.k-scrollview {
   }
 
   .k-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
@@ -3769,12 +3770,12 @@ div.k-scrollview {
 
 .k-list-optionlabel {
   &:hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   &:hover.k-state-selected {
-    color: #fff;
+    color:$text-color;
     background-color: #005083;
   }
 
@@ -3797,12 +3798,12 @@ div.k-scrollview {
 }
 
 .k-list-optionlabel.k-state-hover {
-  color: #fff;
-  background-color: #212529;
+  color:$text-color;
+  background-color: $bar-color;
 }
 
 .k-list-optionlabel.k-state-hover.k-state-selected {
-  color: #fff;
+  color:$text-color;
   background-color: #005083;
 }
 
@@ -3816,7 +3817,7 @@ div.k-scrollview {
 }
 
 .k-list-optionlabel.k-state-selected {
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
@@ -3855,9 +3856,9 @@ div.k-scrollview {
     background: transparent;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   .k-separator {
     border-color: inherit;
@@ -3874,9 +3875,9 @@ kendo-toolbar-renderer {
     background: none;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .editorToolbarWindow.k-window-content {
@@ -3885,9 +3886,9 @@ kendo-toolbar-renderer {
     background: none;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-edit-form-container {
@@ -3908,11 +3909,11 @@ kendo-toolbar-renderer {
   }
 
   .k-form-legend {
-    border-color: #495057;
+    border-color: $border-color;
   }
 
   .k-field-info {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-alert-error {
@@ -3930,11 +3931,11 @@ kendo-toolbar-renderer {
   }
 
   .k-form-legend {
-    border-color: #495057;
+    border-color: $border-color;
   }
 
   .k-field-info {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-alert-error {
@@ -3957,7 +3958,7 @@ kendo-toolbar-renderer {
 }
 
 .k-form-separator {
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-listgroup-item {
@@ -3988,7 +3989,7 @@ kendo-toolbar-renderer {
     }
 
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
 
     &:disabled {
@@ -4019,7 +4020,7 @@ kendo-toolbar-renderer {
 
   &:checked {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
 
     &:focus {
@@ -4044,7 +4045,7 @@ kendo-toolbar-renderer {
   }
 
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 
   &:disabled {
@@ -4126,7 +4127,7 @@ kendo-toolbar-renderer {
 
   &:checked {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
 
     &:focus {
@@ -4178,13 +4179,13 @@ kendo-toolbar-renderer {
 
 .k-switch-on {
   .k-switch-container {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
   .k-switch-handle {
-    color: #fff;
-    background-color: #fff;
+    color:$text-color;
+    background-color:$text-color;
   }
 
   &:focus {
@@ -4193,13 +4194,13 @@ kendo-toolbar-renderer {
 
   &:hover {
     .k-switch-container {
-      color: #fff;
+      color:$text-color;
       background-color: #004068;
     }
 
     .k-switch-handle {
-      color: #fff;
-      background-color: #fff;
+      color:$text-color;
+      background-color:$text-color;
     }
   }
 
@@ -4214,13 +4215,13 @@ kendo-toolbar-renderer {
 
 .k-switch-on.k-state-hover {
   .k-switch-container {
-    color: #fff;
+    color:$text-color;
     background-color: #004068;
   }
 
   .k-switch-handle {
-    color: #fff;
-    background-color: #fff;
+    color:$text-color;
+    background-color:$text-color;
   }
 }
 
@@ -4232,7 +4233,7 @@ kendo-toolbar-renderer {
 
   .k-switch-handle {
     color: #000;
-    background-color: #fff;
+    background-color:$text-color;
   }
 
   &:focus {
@@ -4247,7 +4248,7 @@ kendo-toolbar-renderer {
 
     .k-switch-handle {
       color: #000;
-      background-color: #fff;
+      background-color:$text-color;
     }
   }
 
@@ -4268,7 +4269,7 @@ kendo-toolbar-renderer {
 
   .k-switch-handle {
     color: #000;
-    background-color: #fff;
+    background-color:$text-color;
   }
 }
 
@@ -4828,7 +4829,7 @@ input.k-textbox {
 
 .k-tooltip {
   border-color: #000;
-  color: #fff;
+  color:$text-color;
   background-color: #000;
 
   .k-callout {
@@ -4838,7 +4839,7 @@ input.k-textbox {
 
 .k-tooltip-primary {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 
   .k-callout {
@@ -4848,7 +4849,7 @@ input.k-textbox {
 
 .k-tooltip-info {
   border-color: $info;
-  color: #fff;
+  color:$text-color;
   background-color: $info;
 
   .k-callout {
@@ -4858,7 +4859,7 @@ input.k-textbox {
 
 .k-tooltip-success {
   border-color: $success;
-  color: #fff;
+  color:$text-color;
   background-color: $success;
 
   .k-callout {
@@ -4868,7 +4869,7 @@ input.k-textbox {
 
 .k-tooltip-warning {
   border-color: $warning;
-  color: #fff;
+  color:$text-color;
   background-color: $warning;
 
   .k-callout {
@@ -4878,7 +4879,7 @@ input.k-textbox {
 
 .k-tooltip-error {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 
   .k-callout {
@@ -4903,18 +4904,18 @@ input.k-textbox {
 
 .k-fab-primary {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 
   &:hover {
     border-color: #00385b;
-    color: #fff;
+    color:$text-color;
     background-color: #004068;
   }
 
   &:active {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
   }
 
@@ -4925,18 +4926,18 @@ input.k-textbox {
 
 .k-fab-secondary {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   &:active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
@@ -4947,18 +4948,18 @@ input.k-textbox {
 
 .k-fab-tertiary {
   border-color: #6f42c1;
-  color: #fff;
+  color:$text-color;
   background-color: #6f42c1;
 
   &:hover {
     border-color: #59339d;
-    color: #fff;
+    color:$text-color;
     background-color: #5e37a6;
   }
 
   &:active {
     border-color: #533093;
-    color: #fff;
+    color:$text-color;
     background-color: #59339d;
   }
 
@@ -4969,18 +4970,18 @@ input.k-textbox {
 
 .k-fab-info {
   border-color: $info;
-  color: #fff;
+  color:$text-color;
   background-color: $info;
 
   &:hover {
     border-color: #4b7890;
-    color: #fff;
+    color:$text-color;
     background-color: #4f7f99;
   }
 
   &:active {
     border-color: #467188;
-    color: #fff;
+    color:$text-color;
     background-color: #4b7890;
   }
 
@@ -4991,18 +4992,18 @@ input.k-textbox {
 
 .k-fab-success {
   border-color: $success;
-  color: #fff;
+  color:$text-color;
   background-color: $success;
 
   &:hover {
     border-color: #5ca561;
-    color: #fff;
+    color:$text-color;
     background-color: #64a969;
   }
 
   &:active {
     border-color: #579d5c;
-    color: #fff;
+    color:$text-color;
     background-color: #5ca561;
   }
 
@@ -5013,18 +5014,18 @@ input.k-textbox {
 
 .k-fab-warning {
   border-color: $warning;
-  color: #fff;
+  color:$text-color;
   background-color: $warning;
 
   &:hover {
     border-color: #ae7948;
-    color: #fff;
+    color:$text-color;
     background-color: #b6804d;
   }
 
   &:active {
     border-color: #a57344;
-    color: #fff;
+    color:$text-color;
     background-color: #ae7948;
   }
 
@@ -5035,18 +5036,18 @@ input.k-textbox {
 
 .k-fab-error {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 
   &:hover {
     border-color: #c56262;
-    color: #fff;
+    color:$text-color;
     background-color: #c96b6b;
   }
 
   &:active {
     border-color: #c25858;
-    color: #fff;
+    color:$text-color;
     background-color: #c56262;
   }
 
@@ -5057,18 +5058,18 @@ input.k-textbox {
 
 .k-fab-dark {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 
   &:hover {
     border-color: #1d2124;
-    color: #fff;
+    color:$text-color;
     background-color: #23272b;
   }
 
   &:active {
     border-color: #171a1d;
-    color: #fff;
+    color:$text-color;
     background-color: #1d2124;
   }
 
@@ -5101,18 +5102,18 @@ input.k-textbox {
 
 .k-fab-inverse {
   border-color: #343a40;
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 
   &:hover {
     border-color: #1d2124;
-    color: #fff;
+    color:$text-color;
     background-color: #23272b;
   }
 
   &:active {
     border-color: #171a1d;
-    color: #fff;
+    color:$text-color;
     background-color: #1d2124;
   }
 
@@ -5123,18 +5124,18 @@ input.k-textbox {
 
 .k-fab-danger {
   border-color: $danger;
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 
   &:hover {
     border-color: #c56262;
-    color: #fff;
+    color:$text-color;
     background-color: #c96b6b;
   }
 
   &:active {
     border-color: #c25858;
-    color: #fff;
+    color:$text-color;
     background-color: #c56262;
   }
 
@@ -5145,97 +5146,97 @@ input.k-textbox {
 
 .k-state-hover.k-fab-primary {
   border-color: #00385b;
-  color: #fff;
+  color:$text-color;
   background-color: #004068;
 }
 
 .k-state-hovered.k-fab-primary {
   border-color: #00385b;
-  color: #fff;
+  color:$text-color;
   background-color: #004068;
 }
 
 .k-state-hover.k-fab-secondary {
   border-color: #2f373d;
-  color: #fff;
+  color:$text-color;
   background-color: #343e44;
 }
 
 .k-state-hovered.k-fab-secondary {
   border-color: #2f373d;
-  color: #fff;
+  color:$text-color;
   background-color: #343e44;
 }
 
 .k-state-hover.k-fab-tertiary {
   border-color: #59339d;
-  color: #fff;
+  color:$text-color;
   background-color: #5e37a6;
 }
 
 .k-state-hovered.k-fab-tertiary {
   border-color: #59339d;
-  color: #fff;
+  color:$text-color;
   background-color: #5e37a6;
 }
 
 .k-state-hover.k-fab-info {
   border-color: #4b7890;
-  color: #fff;
+  color:$text-color;
   background-color: #4f7f99;
 }
 
 .k-state-hovered.k-fab-info {
   border-color: #4b7890;
-  color: #fff;
+  color:$text-color;
   background-color: #4f7f99;
 }
 
 .k-state-hover.k-fab-success {
   border-color: #5ca561;
-  color: #fff;
+  color:$text-color;
   background-color: #64a969;
 }
 
 .k-state-hovered.k-fab-success {
   border-color: #5ca561;
-  color: #fff;
+  color:$text-color;
   background-color: #64a969;
 }
 
 .k-state-hover.k-fab-warning {
   border-color: #ae7948;
-  color: #fff;
+  color:$text-color;
   background-color: #b6804d;
 }
 
 .k-state-hovered.k-fab-warning {
   border-color: #ae7948;
-  color: #fff;
+  color:$text-color;
   background-color: #b6804d;
 }
 
 .k-state-hover.k-fab-error {
   border-color: #c56262;
-  color: #fff;
+  color:$text-color;
   background-color: #c96b6b;
 }
 
 .k-state-hovered.k-fab-error {
   border-color: #c56262;
-  color: #fff;
+  color:$text-color;
   background-color: #c96b6b;
 }
 
 .k-state-hover.k-fab-dark {
   border-color: #1d2124;
-  color: #fff;
+  color:$text-color;
   background-color: #23272b;
 }
 
 .k-state-hovered.k-fab-dark {
   border-color: #1d2124;
-  color: #fff;
+  color:$text-color;
   background-color: #23272b;
 }
 
@@ -5253,25 +5254,25 @@ input.k-textbox {
 
 .k-state-hover.k-fab-inverse {
   border-color: #1d2124;
-  color: #fff;
+  color:$text-color;
   background-color: #23272b;
 }
 
 .k-state-hovered.k-fab-inverse {
   border-color: #1d2124;
-  color: #fff;
+  color:$text-color;
   background-color: #23272b;
 }
 
 .k-state-hover.k-fab-danger {
   border-color: #c56262;
-  color: #fff;
+  color:$text-color;
   background-color: #c96b6b;
 }
 
 .k-state-hovered.k-fab-danger {
   border-color: #c56262;
-  color: #fff;
+  color:$text-color;
   background-color: #c96b6b;
 }
 
@@ -5285,97 +5286,97 @@ input.k-textbox {
 
 .k-state-active.k-fab-primary {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
 }
 
 .k-state-selected.k-fab-primary {
   border-color: #00304e;
-  color: #fff;
+  color:$text-color;
   background-color: #00385b;
 }
 
 .k-state-active.k-fab-secondary {
   border-color: #293136;
-  color: #fff;
+  color:$text-color;
   background-color: #2f373d;
 }
 
 .k-state-selected.k-fab-secondary {
   border-color: #293136;
-  color: #fff;
+  color:$text-color;
   background-color: #2f373d;
 }
 
 .k-state-active.k-fab-tertiary {
   border-color: #533093;
-  color: #fff;
+  color:$text-color;
   background-color: #59339d;
 }
 
 .k-state-selected.k-fab-tertiary {
   border-color: #533093;
-  color: #fff;
+  color:$text-color;
   background-color: #59339d;
 }
 
 .k-state-active.k-fab-info {
   border-color: #467188;
-  color: #fff;
+  color:$text-color;
   background-color: #4b7890;
 }
 
 .k-state-selected.k-fab-info {
   border-color: #467188;
-  color: #fff;
+  color:$text-color;
   background-color: #4b7890;
 }
 
 .k-state-active.k-fab-success {
   border-color: #579d5c;
-  color: #fff;
+  color:$text-color;
   background-color: #5ca561;
 }
 
 .k-state-selected.k-fab-success {
   border-color: #579d5c;
-  color: #fff;
+  color:$text-color;
   background-color: #5ca561;
 }
 
 .k-state-active.k-fab-warning {
   border-color: #a57344;
-  color: #fff;
+  color:$text-color;
   background-color: #ae7948;
 }
 
 .k-state-selected.k-fab-warning {
   border-color: #a57344;
-  color: #fff;
+  color:$text-color;
   background-color: #ae7948;
 }
 
 .k-state-active.k-fab-error {
   border-color: #c25858;
-  color: #fff;
+  color:$text-color;
   background-color: #c56262;
 }
 
 .k-state-selected.k-fab-error {
   border-color: #c25858;
-  color: #fff;
+  color:$text-color;
   background-color: #c56262;
 }
 
 .k-state-active.k-fab-dark {
   border-color: #171a1d;
-  color: #fff;
+  color:$text-color;
   background-color: #1d2124;
 }
 
 .k-state-selected.k-fab-dark {
   border-color: #171a1d;
-  color: #fff;
+  color:$text-color;
   background-color: #1d2124;
 }
 
@@ -5393,25 +5394,25 @@ input.k-textbox {
 
 .k-state-active.k-fab-inverse {
   border-color: #171a1d;
-  color: #fff;
+  color:$text-color;
   background-color: #1d2124;
 }
 
 .k-state-selected.k-fab-inverse {
   border-color: #171a1d;
-  color: #fff;
+  color:$text-color;
   background-color: #1d2124;
 }
 
 .k-state-active.k-fab-danger {
   border-color: #c25858;
-  color: #fff;
+  color:$text-color;
   background-color: #c56262;
 }
 
 .k-state-selected.k-fab-danger {
   border-color: #c25858;
-  color: #fff;
+  color:$text-color;
   background-color: #c56262;
 }
 
@@ -5464,7 +5465,7 @@ input.k-textbox {
 }
 
 .k-fab-item-text {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.14), 0 1px 10px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -5730,26 +5731,26 @@ input.k-textbox {
 
   .k-draghandle {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
     border-radius: 50%;
 
     &:hover {
       border-color: #00385b;
-      color: #fff;
+      color:$text-color;
       background-color: #004068;
     }
 
     &:active {
       border-color: #00304e;
-      color: #fff;
+      color:$text-color;
       background-color: #00385b;
     }
   }
 
   .k-draghandle.k-pressed {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
   }
 }
@@ -5774,7 +5775,7 @@ input.k-textbox {
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
       border-color: #2f373d;
     }
@@ -5785,7 +5786,7 @@ input.k-textbox {
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
@@ -5796,7 +5797,7 @@ input.k-textbox {
     }
 
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
   }
 
@@ -5817,26 +5818,26 @@ input.k-textbox {
 
   .k-tool-icon.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
     border-color: #2f373d;
   }
 
   .k-select.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
@@ -5984,92 +5985,92 @@ input.k-textbox {
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
   .k-header {
     border-color: inherit;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     box-shadow: none;
   }
 
   .k-nav-prev {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     &:active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
 
   .k-nav-prev.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-nav-next {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     &:active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
 
   .k-nav-next.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-nav-fast {
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     &:active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
   }
 
   .k-nav-fast.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-nav-prev.k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
   .k-nav-next.k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
   .k-nav-fast.k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
@@ -6119,7 +6120,7 @@ input.k-textbox {
     .k-link {
       border-color: #212529;
       color: $text-color;
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 
@@ -6128,7 +6129,7 @@ input.k-textbox {
       .k-link {
         border-color: #212529;
         color: $text-color;
-        background-color: #212529;
+        background-color: $bar-color;
       }
     }
   }
@@ -6138,7 +6139,7 @@ input.k-textbox {
       .k-link {
         border-color: #212529;
         color: $text-color;
-        background-color: #212529;
+        background-color: $bar-color;
       }
     }
   }
@@ -6146,14 +6147,14 @@ input.k-textbox {
   .k-state-selected {
     .k-link {
       border-color: #003251;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
     &:hover {
       .k-link {
         border-color: #002e4a;
-        color: #fff;
+        color:$text-color;
         background-color: #005083;
       }
     }
@@ -6162,7 +6163,7 @@ input.k-textbox {
   .k-state-selected.k-state-hover {
     .k-link {
       border-color: #002e4a;
-      color: #fff;
+      color:$text-color;
       background-color: #005083;
     }
   }
@@ -6181,8 +6182,8 @@ input.k-textbox {
 
   .k-calendar-navigation {
     color: $text-color;
-    background-color: #212529;
-    box-shadow: inset -1px 0 #495057;
+    background-color: $bar-color;
+    box-shadow: inset -1px 0 $border-color;
 
     li {
       &:hover {
@@ -6192,7 +6193,7 @@ input.k-textbox {
   }
 
   .k-calendar-navigation-highlight {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -6242,7 +6243,7 @@ input.k-textbox {
 
 .k-calendar[dir="rtl"] {
   .k-calendar-navigation {
-    box-shadow: inset 1px 0 #495057;
+    box-shadow: inset 1px 0 $border-color;
   }
 }
 
@@ -6310,9 +6311,9 @@ input.k-textbox {
   background-color: $body-bg;
 
   .k-title {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     background: $body-bg;
     opacity: .65;
   }
@@ -6334,7 +6335,7 @@ input.k-textbox {
 
 .k-time-highlight {
   background-color: $body-bg;
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-datetime-container {
@@ -6472,9 +6473,9 @@ input.k-textbox {
 .k-dropdowngrid-popup {
   .k-grid-header {
     border-color: inherit;
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-grid-header-wrap {
@@ -6486,21 +6487,21 @@ input.k-textbox {
   background-color: $body-bg;
 
   .k-header {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-footer {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-group-header {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-item {
@@ -6602,18 +6603,18 @@ input.k-textbox {
 
 select.k-dropdown {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   &:focus {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: 0 0 0 3px rgba(69, 81, 90, 0.5);
   }
@@ -6621,18 +6622,18 @@ select.k-dropdown {
 
 select.k-dropdowntree {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   &:focus {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
     box-shadow: 0 0 0 3px rgba(69, 81, 90, 0.5);
   }
@@ -6696,7 +6697,7 @@ select.k-dropdowntree {
     &:hover {
       border-color: #212529;
       color: $text-color;
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 
@@ -6705,12 +6706,12 @@ select.k-dropdowntree {
   .k-in.k-state-hover {
     border-color: #212529;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-in.k-state-selected {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
@@ -6796,9 +6797,9 @@ select.k-dropdowntree {
 }
 
 .k-dropzone-inner {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   >.k-icon {
     color: #edf0f2;
@@ -6826,9 +6827,9 @@ select.k-dropdowntree {
 .k-upload {
   .k-dropzone {
     background-color: transparent;
-    border-color: #495057;
+    border-color: $border-color;
     color: #000;
-    background-color: #212529;
+    background-color: $bar-color;
 
     .k-upload-status {
       color: #000;
@@ -6851,7 +6852,7 @@ select.k-dropdowntree {
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -7033,7 +7034,7 @@ select.k-dropdowntree {
 
 .k-listbox {
   .k-list-scroller {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -7045,7 +7046,7 @@ select.k-dropdowntree {
 
 li.k-item.k-drag-clue {
   background-color: $primary;
-  color: #fff;
+  color:$text-color;
 }
 
 .k-rating-item {
@@ -7073,37 +7074,37 @@ li.k-item.k-drag-clue {
 }
 
 .k-appbar-primary {
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
 .k-appbar-secondary {
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 }
 
 .k-appbar-tertiary {
-  color: #fff;
+  color:$text-color;
   background-color: #6f42c1;
 }
 
 .k-appbar-info {
-  color: #fff;
+  color:$text-color;
   background-color: $info;
 }
 
 .k-appbar-success {
-  color: #fff;
+  color:$text-color;
   background-color: $success;
 }
 
 .k-appbar-warning {
-  color: #fff;
+  color:$text-color;
   background-color: $warning;
 }
 
 .k-appbar-error {
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
@@ -7114,16 +7115,16 @@ li.k-item.k-drag-clue {
 
 .k-appbar-light {
   color: #6c757d;
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-appbar-inverse {
-  color: #fff;
+  color:$text-color;
   background-color: #343a40;
 }
 
 .k-appbar-danger {
-  color: #fff;
+  color:$text-color;
   background-color: $danger;
 }
 
@@ -7133,13 +7134,13 @@ li.k-item.k-drag-clue {
 
 .k-menu-vertical {
   >.k-separator {
-    border-color: #495057;
+    border-color: $border-color;
   }
 }
 
 .k-menu-group {
   .k-separator {
-    border-color: #495057;
+    border-color: $border-color;
   }
 
   border-color: rgba(255, 255, 255, 0.15);
@@ -7148,12 +7149,12 @@ li.k-item.k-drag-clue {
 
   .k-item {
     &:hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     >.k-state-active {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
@@ -7163,8 +7164,8 @@ li.k-item.k-drag-clue {
   }
 
   .k-item.k-state-hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   .k-item.k-state-focused {
@@ -7175,9 +7176,9 @@ li.k-item.k-drag-clue {
 .k-menu-scroll-button {
   border-color: inherit;
   color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: rgba(206, 212, 218, 0.5);
-  background-color: #212529;
+  background-color: $bar-color;
 
   &:hover {
     color: rgba(206, 212, 218, 0.7);
@@ -7186,9 +7187,9 @@ li.k-item.k-drag-clue {
 
 .k-menu {
   &:not(.k-context-menu) {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
 
     >.k-item {
       color: rgba(206, 212, 218, 0.5);
@@ -7223,12 +7224,12 @@ li.k-item.k-drag-clue {
 
   .k-item {
     &:hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     >.k-state-active {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
@@ -7238,8 +7239,8 @@ li.k-item.k-drag-clue {
   }
 
   .k-item.k-state-hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   .k-item.k-state-focused {
@@ -7264,18 +7265,18 @@ li.k-item.k-drag-clue {
 }
 
 .k-window-titlebar {
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-popup-edit-form {
   .k-edit-buttons {
-    border-color: #495057;
+    border-color: $border-color;
   }
 }
 
 .k-dialog-buttongroup {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-drawer-item {
@@ -7343,22 +7344,22 @@ li.k-item.k-drag-clue {
 }
 
 .k-drawer-item.k-state-selected {
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 
   &:hover {
-    color: #fff;
+    color:$text-color;
     background-color: #004068;
   }
 }
 
 .k-drawer-item.k-state-selected.k-state-hover {
-  color: #fff;
+  color:$text-color;
   background-color: #004068;
 }
 
 .k-drawer-separator {
-  background-color: #495057;
+  background-color: $border-color;
 }
 
 .k-notification-wrap {
@@ -7438,13 +7439,13 @@ li.k-item.k-drag-clue {
 .k-pager-numbers {
   .k-link {
     color: inherit;
-    border-color: #495057;
-    color: $primary;
+    border-color: $border-color;
+    color: $text-color;
     background-color: $body-bg;
 
     &:hover {
-      border-color: #495057;
-      color: $primary;
+      border-color: $border-color;
+      color: $text-color;
       background-color: #181c20;
     }
 
@@ -7459,7 +7460,7 @@ li.k-item.k-drag-clue {
   }
 
   .k-link.k-state-hover {
-    border-color: #495057;
+    border-color: $border-color;
     color: $primary;
     background-color: #181c20;
   }
@@ -7471,19 +7472,19 @@ li.k-item.k-drag-clue {
 
   .k-link.k-state-selected {
     border-color: $primary;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 }
 
 .k-pager-refresh {
   color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $primary;
   background-color: $body-bg;
 
   &:hover {
-    border-color: #495057;
+    border-color: $border-color;
     color: $primary;
     background-color: #181c20;
   }
@@ -7511,17 +7512,17 @@ li.k-item.k-drag-clue {
     .k-current-page {
       .k-link {
         border-color: $secondary;
-        color: #fff;
+        color:$text-color;
         background-color: $secondary;
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: $body-bg;
 
         &:hover {
           border-color: #2f373d;
-          color: #fff;
+          color:$text-color;
           background-color: #343e44;
-          border-color: #495057;
+          border-color: $border-color;
           color: $text-color;
           background-color: #181c20;
         }
@@ -7529,9 +7530,9 @@ li.k-item.k-drag-clue {
 
       .k-link.k-state-hover {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: #181c20;
       }
@@ -7546,31 +7547,31 @@ li.k-item.k-drag-clue {
 
     .k-link {
       &:hover {
-        color: #fff;
-        background-color: #212529;
+        color:$text-color;
+        background-color: $bar-color;
       }
     }
 
     .k-link.k-state-hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     .k-link.k-state-selected {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
   }
 }
 
 .k-pager-nav.k-link {
-  border-color: #495057;
-  color: $primary;
+  border-color: $border-color;
+  color: $text-color;
   background-color: $body-bg;
 
   &:hover {
-    border-color: #495057;
-    color: $primary;
+    border-color: $border-color;
+    color: $text-color;
     background-color: #181c20;
   }
 
@@ -7581,26 +7582,26 @@ li.k-item.k-drag-clue {
 }
 
 .k-state-hover.k-pager-nav.k-link {
-  border-color: #495057;
+  border-color: $border-color;
   color: $primary;
   background-color: #181c20;
 }
 
 .k-state-hover.k-pager-refresh {
-  border-color: #495057;
+  border-color: $border-color;
   color: $primary;
   background-color: #181c20;
 }
 
 .k-state-selected.k-pager-nav.k-link {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
 .k-state-selected.k-pager-refresh {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
@@ -7619,17 +7620,17 @@ li.k-item.k-drag-clue {
     .k-current-page {
       .k-link {
         border-color: $secondary;
-        color: #fff;
+        color:$text-color;
         background-color: $secondary;
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: $body-bg;
 
         &:hover {
           border-color: #2f373d;
-          color: #fff;
+          color:$text-color;
           background-color: #343e44;
-          border-color: #495057;
+          border-color: $border-color;
           color: $text-color;
           background-color: #181c20;
         }
@@ -7637,9 +7638,9 @@ li.k-item.k-drag-clue {
 
       .k-link.k-state-hover {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: #181c20;
       }
@@ -7654,18 +7655,18 @@ li.k-item.k-drag-clue {
 
     .k-link {
       &:hover {
-        color: #fff;
-        background-color: #212529;
+        color:$text-color;
+        background-color: $bar-color;
       }
     }
 
     .k-link.k-state-hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     .k-link.k-state-selected {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
   }
@@ -7674,13 +7675,13 @@ li.k-item.k-drag-clue {
 .k-panelbar {
   >.k-item {
     border-color: inherit;
-    border-color: #495057;
+    border-color: $border-color;
 
     >.k-link {
       color: inherit;
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
-      background-color: #212529;
+      background-color: $bar-color;
 
       &:hover {
         background-color: #1a1d21;
@@ -7709,7 +7710,7 @@ li.k-item.k-drag-clue {
 
     >.k-link.k-state-selected {
       border-color: #003251;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
@@ -7769,13 +7770,13 @@ li.k-item.k-drag-clue {
       }
 
       >.k-link.k-state-selected {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
       }
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -7789,7 +7790,7 @@ li.k-item.k-drag-clue {
       box-shadow: inset 0 0 0 2px $body-bg;
     }
 
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -7807,7 +7808,7 @@ li.k-item.k-drag-clue {
 
     &:disabled {
       .k-step-indicator {
-        border-color: #495057;
+        border-color: $border-color;
         color: #e2e5e9;
         background-color: $body-bg;
       }
@@ -7826,7 +7827,7 @@ li.k-item.k-drag-clue {
 
   .k-step.k-step-disabled {
     .k-step-indicator {
-      border-color: #495057;
+      border-color: $border-color;
       color: #e2e5e9;
       background-color: $body-bg;
     }
@@ -7834,7 +7835,7 @@ li.k-item.k-drag-clue {
 
   .k-step-label {
     &:only-child {
-      border-color: #495057;
+      border-color: $border-color;
       color: $text-color;
       background-color: $body-bg;
     }
@@ -7845,7 +7846,7 @@ li.k-item.k-drag-clue {
   .k-step-done {
     .k-step-indicator {
       border-color: $primary;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
@@ -7858,7 +7859,7 @@ li.k-item.k-drag-clue {
     &:disabled {
       .k-step-indicator {
         border-color: #11486b;
-        color: #fff;
+        color:$text-color;
         background-color: #11486b;
       }
     }
@@ -7873,7 +7874,7 @@ li.k-item.k-drag-clue {
   .k-step-done.k-step-disabled {
     .k-step-indicator {
       border-color: #11486b;
-      color: #fff;
+      color:$text-color;
       background-color: #11486b;
     }
   }
@@ -7881,7 +7882,7 @@ li.k-item.k-drag-clue {
   .k-step-current {
     .k-step-indicator {
       border-color: $primary;
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
 
@@ -7894,7 +7895,7 @@ li.k-item.k-drag-clue {
     &:disabled {
       .k-step-indicator {
         border-color: #11486b;
-        color: #fff;
+        color:$text-color;
         background-color: #11486b;
       }
     }
@@ -7909,7 +7910,7 @@ li.k-item.k-drag-clue {
   .k-step-current.k-step-disabled {
     .k-step-indicator {
       border-color: #11486b;
-      color: #fff;
+      color:$text-color;
       background-color: #11486b;
     }
   }
@@ -7960,7 +7961,7 @@ li.k-item.k-drag-clue {
 
   >.k-content {
     border-color: inherit;
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -7968,7 +7969,7 @@ li.k-item.k-drag-clue {
 
 .k-tabstrip-items {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
 
   .k-link {
@@ -7983,24 +7984,24 @@ li.k-item.k-drag-clue {
     color: $primary;
 
     &:hover {
-      border-color: #e9ecef #e9ecef #495057;
+      border-color: #e9ecef #e9ecef $border-color;
       color: #002842;
     }
   }
 
   .k-item.k-state-hover {
-    border-color: #e9ecef #e9ecef #495057;
+    border-color: #e9ecef #e9ecef $border-color;
     color: #002842;
   }
 
   .k-item.k-state-active {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
 
   .k-item.k-state-selected {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -8063,7 +8064,7 @@ li.k-item.k-drag-clue {
 }
 
 .k-expander {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -8103,16 +8104,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8134,16 +8135,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8165,16 +8166,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8196,16 +8197,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8227,16 +8228,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8258,16 +8259,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8289,16 +8290,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8320,16 +8321,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8382,16 +8383,16 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
@@ -8413,21 +8414,21 @@ li.k-item.k-drag-clue {
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
     }
   }
 
   .k-bottom-nav-item.k-state-selected {
-    color: #fff;
+    color:$text-color;
   }
 
   .k-bottom-nav-item.k-state-active {
-    color: #fff;
+    color:$text-color;
   }
 }
 
 .k-bottom-nav-flat {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -8794,7 +8795,7 @@ li.k-item.k-drag-clue {
   }
 
   &:active {
-    color: #fff;
+    color:$text-color;
     background: $primary;
   }
 }
@@ -8815,12 +8816,12 @@ li.k-item.k-drag-clue {
 }
 
 .k-splitbar.k-state-focus {
-  color: #fff;
+  color:$text-color;
   background: $primary;
 }
 
 .k-splitbar.k-state-focused {
-  color: #fff;
+  color:$text-color;
   background: $primary;
 }
 
@@ -8833,7 +8834,7 @@ li.k-item.k-drag-clue {
 }
 
 .k-layout-item-hint {
-  border-color: #495057;
+  border-color: $border-color;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -8912,7 +8913,7 @@ li.k-item.k-drag-clue {
 
     .k-header {
       border-color: rgba(206, 212, 218, 0.5);
-      border-bottom-color: #495057;
+      border-bottom-color: $border-color;
     }
   }
 
@@ -8926,17 +8927,17 @@ li.k-item.k-drag-clue {
 
     .k-group-footer {
       td {
-        border-color: #495057;
+        border-color: $border-color;
       }
     }
 
     .k-group-cell {
-      border-color: #495057;
+      border-color: $border-color;
     }
 
     .k-grouping-row+tr {
       td {
-        border-top-color: #495057;
+        border-top-color: $border-color;
       }
     }
 
@@ -9065,13 +9066,13 @@ li.k-item.k-drag-clue {
 
 .k-grouping-header {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   .k-group-indicator {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
   }
 }
@@ -9086,9 +9087,9 @@ li.k-item.k-drag-clue {
 
 .k-grid-header {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   .k-i-sort-asc-sm {
     color: $primary;
@@ -9122,31 +9123,31 @@ li.k-item.k-drag-clue {
     }
 
     .k-icon.k-state-active {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
   }
 
   .k-grid-filter.k-state-active {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
   .k-header-column-menu.k-state-active {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
   .k-grid-header-sticky {
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     border-right-color: rgba(206, 212, 218, 0.5);
     border-left-color: rgba(206, 212, 218, 0.5);
   }
 
   .k-grid-header-sticky.k-sorted {
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
     border-right-color: rgba(206, 212, 218, 0.5);
     border-left-color: rgba(206, 212, 218, 0.5);
   }
@@ -9154,14 +9155,14 @@ li.k-item.k-drag-clue {
 
 .k-grid-footer {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   .k-grid-footer-sticky {
-    background-color: #212529;
+    background-color: $bar-color;
     border-color: rgba(206, 212, 218, 0.5);
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-grid-footer-locked {
@@ -9179,9 +9180,9 @@ li.k-item.k-drag-clue {
 
 .k-grid-pager {
   border-color: inherit;
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-grid.k-rtl {
@@ -9285,7 +9286,7 @@ li.k-item.k-drag-clue {
 
 .k-grouping-row {
   .k-grid-content-sticky {
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   &:hover {
@@ -9294,9 +9295,9 @@ li.k-item.k-drag-clue {
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-grouping-row.k-state-hover {
@@ -9307,43 +9308,43 @@ li.k-item.k-drag-clue {
 
 .k-group-footer {
   td {
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-grid-footer-sticky {
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   &:hover {
     .k-grid-footer-sticky {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 }
 
 .k-group-footer.k-state-hover {
   .k-grid-footer-sticky {
-    background-color: #212529;
+    background-color: $bar-color;
   }
 }
 
 .k-group-cell {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-column-list-item {
   &:hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 }
 
 .k-columnmenu-item {
   &:hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   &:focus {
@@ -9360,7 +9361,7 @@ li.k-item.k-drag-clue {
 }
 
 .k-columnmenu-item.k-state-selected {
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
 }
 
@@ -9375,8 +9376,8 @@ li.k-item.k-drag-clue {
         color: $text-color;
 
         &:hover {
-          color: #fff;
-          background-color: #212529;
+          color:$text-color;
+          background-color: $bar-color;
         }
 
         &:focus {
@@ -9385,12 +9386,12 @@ li.k-item.k-drag-clue {
       }
 
       .k-item.k-state-hover {
-        color: #fff;
-        background-color: #212529;
+        color:$text-color;
+        background-color: $bar-color;
       }
 
       .k-item.k-state-selected {
-        color: #fff;
+        color:$text-color;
         background-color: $primary;
       }
 
@@ -9430,7 +9431,7 @@ li.k-item.k-drag-clue {
 }
 
 .k-listview {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -9520,9 +9521,9 @@ li.k-item.k-drag-clue {
     border-bottom-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-spreadsheet-haxis {
@@ -9542,9 +9543,9 @@ li.k-item.k-drag-clue {
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-spreadsheet-column-header {
@@ -9556,9 +9557,9 @@ li.k-item.k-drag-clue {
     }
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-spreadsheet-data {
@@ -9583,14 +9584,14 @@ li.k-item.k-drag-clue {
       font-size: inherit;
 
       .k-item.k-state-hover {
-        color: #fff;
-        background-color: #212529;
+        color:$text-color;
+        background-color: $bar-color;
       }
     }
 
     .k-item.k-state-hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
   }
 
@@ -9605,7 +9606,7 @@ li.k-item.k-drag-clue {
   }
 
   .k-spreadsheet-value-treeview-wrapper {
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
     background-color: $body-bg;
   }
@@ -9617,28 +9618,28 @@ li.k-item.k-drag-clue {
     background: none;
 
     &:hover {
-      color: #fff;
-      background-color: #212529;
+      color:$text-color;
+      background-color: $bar-color;
     }
 
     &:active {
-      color: #fff;
+      color:$text-color;
       background-color: $primary;
     }
   }
 
   .k-button.k-state-hover {
-    color: #fff;
-    background-color: #212529;
+    color:$text-color;
+    background-color: $bar-color;
   }
 
   .k-button.k-state-active {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
   .k-button.k-state-selected {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 }
@@ -9713,25 +9714,25 @@ li.k-item.k-drag-clue {
 
 .k-spreadsheet-filter {
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
   box-shadow: inset 0 0 0 1px $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 }
 
 .k-spreadsheet-filter.k-state-active {
   border-color: #293136;
-  color: #fff;
+  color:$text-color;
   background-color: #2f373d;
 }
 
 .k-spreadsheet-insert-image-dialog {
-  border-color: #495057;
+  border-color: $border-color;
 
   .k-spreadsheet-has-image {
     &:hover {
@@ -9780,27 +9781,27 @@ li.k-item.k-drag-clue {
 }
 
 .k-pivot {
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-pivot-toolbar {
-  background-color: #212529;
-  border-color: #495057;
+  background-color: $bar-color;
+  border-color: $border-color;
 
   .k-button {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     &:active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
 
@@ -9811,13 +9812,13 @@ li.k-item.k-drag-clue {
 
   .k-button.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-button.k-state-active {
     border-color: #293136;
-    color: #fff;
+    color:$text-color;
     background-color: #2f373d;
   }
 
@@ -9832,7 +9833,7 @@ li.k-item.k-drag-clue {
       &:first-child {
         >td {
           &:first-child {
-            background-color: #212529;
+            background-color: $bar-color;
           }
         }
       }
@@ -9842,35 +9843,35 @@ li.k-item.k-drag-clue {
 
 .k-fieldselector {
   color: $text-color;
-  background-color: #212529;
-  border-color: #495057;
+  background-color: $bar-color;
+  border-color: $border-color;
 
   .k-list-container {
     background-color: $body-bg;
-    border-color: #495057;
+    border-color: $border-color;
   }
 
   .k-columns {
     >div {
-      border-color: #495057;
+      border-color: $border-color;
     }
   }
 
   .k-list {
     li.k-item {
       border-color: $secondary;
-      color: #fff;
+      color:$text-color;
       background-color: $secondary;
 
       &:hover {
         border-color: #2f373d;
-        color: #fff;
+        color:$text-color;
         background-color: #343e44;
       }
 
       &:active {
         border-color: #293136;
-        color: #fff;
+        color:$text-color;
         background-color: #2f373d;
       }
 
@@ -9881,13 +9882,13 @@ li.k-item.k-drag-clue {
 
     li.k-item.k-state-hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
 
     li.k-item.k-state-active {
       border-color: #293136;
-      color: #fff;
+      color:$text-color;
       background-color: #2f373d;
     }
 
@@ -9900,21 +9901,21 @@ li.k-item.k-drag-clue {
     border-color: #212529;
 
     &::before {
-      background-color: #212529;
+      background-color: $bar-color;
     }
 
     &::after {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 }
 
 .k-pivot-table {
-  border-color: #495057;
+  border-color: $border-color;
 
   .k-grid-header {
     .k-header.k-first {
-      border-color: #495057;
+      border-color: $border-color;
     }
   }
 }
@@ -9923,7 +9924,7 @@ li.k-item.k-drag-clue {
   >.k-grid {
     td {
       &:first-child {
-        border-color: #495057;
+        border-color: $border-color;
       }
     }
   }
@@ -9980,37 +9981,37 @@ li.k-item.k-drag-clue {
 
   .k-group-footer {
     td {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 
   .k-grouping-row {
     td {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 
   tbody {
     .k-group-cell {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 }
 
 .k-treelist {
   tr.k-footer {
-    background-color: #212529;
+    background-color: $bar-color;
 
     &:hover {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 
   tr.k-footer-template {
-    background-color: #212529;
+    background-color: $bar-color;
 
     &:hover {
-      background-color: #212529;
+      background-color: $bar-color;
     }
   }
 }
@@ -10029,13 +10030,13 @@ li.k-item.k-drag-clue {
 
   .k-filter-item {
     &::before {
-      background-color: #495057;
+      background-color: $border-color;
     }
   }
 
   .k-filter-toolbar {
     &::before {
-      background-color: #495057;
+      background-color: $border-color;
     }
   }
 
@@ -10044,7 +10045,7 @@ li.k-item.k-drag-clue {
       &:last-child {
         >.k-filter-toolbar {
           &::after {
-            background-color: #495057;
+            background-color: $border-color;
           }
         }
       }
@@ -10081,13 +10082,13 @@ li.k-item.k-drag-clue {
 }
 
 .k-filemanager {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
 
 .k-filemanager-breadcrumb {
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 .k-filemanager-listview {
@@ -10130,12 +10131,12 @@ table.k-editor {
   }
 
   .k-text-selected {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
   &::selection {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
@@ -10151,7 +10152,7 @@ table.k-editor {
 
   .k-state-selected {
     border-color: #003251;
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 }
@@ -10162,7 +10163,7 @@ table.k-editor {
     border-bottom-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -10209,12 +10210,12 @@ kendo-editor.k-readonly {
   }
 
   &:hover {
-    border-color: #495057;
+    border-color: $border-color;
   }
 }
 
 .k-editor-inline.k-state-active {
-  border-color: #495057;
+  border-color: $border-color;
 }
 
 .k-editor-find-replace {
@@ -10224,7 +10225,7 @@ kendo-editor.k-readonly {
 }
 
 .k-imageeditor {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -10234,12 +10235,12 @@ kendo-editor.k-readonly {
 }
 
 .k-imageeditor-action-pane {
-  border-color: #495057;
+  border-color: $border-color;
   background-color: $body-bg;
 }
 
 .k-imageeditor-crop {
-  border-color: #fff;
+  border-color:$text-color;
 }
 
 .k-imageeditor-crop-overlay {
@@ -10317,7 +10318,7 @@ kendo-editor.k-readonly {
 }
 
 .k-gantt {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -10325,7 +10326,7 @@ kendo-editor.k-readonly {
     .k-task-milestone {
       .k-task-milestone-content {
         border-color: #3d4349;
-        background-color: #495057;
+        background-color: $border-color;
       }
     }
 
@@ -10389,7 +10390,7 @@ kendo-editor.k-readonly {
 
 .k-task-milestone {
   border-color: #3d4349;
-  background-color: #495057;
+  background-color: $border-color;
 }
 
 .k-task-milestone.k-task-delayed {
@@ -10444,8 +10445,8 @@ kendo-editor.k-readonly {
 
 .k-task-single {
   border-color: #6c757d;
-  color: #fff;
-  background-color: #495057;
+  color:$text-color;
+  background-color: $border-color;
 
   .k-task-complete {
     background-color: #6c757d;
@@ -10462,7 +10463,7 @@ kendo-editor.k-readonly {
 
 .k-task-single.k-state-selected {
   border-color: $primary;
-  color: #fff;
+  color:$text-color;
   background-color: #154463;
 
   .k-task-complete {
@@ -10528,9 +10529,9 @@ kendo-editor.k-readonly {
     color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 }
 
 ul.k-scheduler-navigation {
@@ -10544,55 +10545,55 @@ ul.k-scheduler-navigation {
 
   .k-nav-today {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-nav-prev {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-nav-next {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   .k-nav-today.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-nav-prev.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   .k-nav-next.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 }
@@ -10613,25 +10614,25 @@ ul.k-scheduler-views {
 
   li {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
 
   li.k-state-hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
   li.k-state-selected {
     border-color: #00304e;
-    color: #fff;
+    color:$text-color;
     background-color: #00385b;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.06);
   }
@@ -10650,18 +10651,18 @@ ul.k-scheduler-views {
     color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   li {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
 
     &:hover {
       border-color: #2f373d;
-      color: #fff;
+      color:$text-color;
       background-color: #343e44;
     }
   }
@@ -10786,7 +10787,7 @@ kendo-scheduler {
     }
   }
 
-  color: #fff;
+  color:$text-color;
   background-color: #2972a0;
 }
 
@@ -10816,16 +10817,16 @@ kendo-scheduler {
       &:hover {
         border-color: #212529;
         color: $text-color;
-        background-color: #212529;
+        background-color: $bar-color;
 
         .k-scheduler-datecolumn {
-          border-color: #495057;
+          border-color: $border-color;
           color: $text-color;
           background-color: $body-bg;
         }
 
         .k-scheduler-groupcolumn {
-          border-color: #495057;
+          border-color: $border-color;
           color: $text-color;
           background-color: $body-bg;
         }
@@ -10835,16 +10836,16 @@ kendo-scheduler {
     tr.k-state-hover {
       border-color: #212529;
       color: $text-color;
-      background-color: #212529;
+      background-color: $bar-color;
 
       .k-scheduler-datecolumn {
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: $body-bg;
       }
 
       .k-scheduler-groupcolumn {
-        border-color: #495057;
+        border-color: $border-color;
         color: $text-color;
         background-color: $body-bg;
       }
@@ -10854,7 +10855,7 @@ kendo-scheduler {
       &:hover {
         border-color: #212529;
         color: $text-color;
-        background-color: #212529;
+        background-color: $bar-color;
       }
     }
 
@@ -10911,7 +10912,7 @@ ul.k-scheduler-views.k-state-expanded {
 }
 
 .k-event.k-state-selected {
-  color: #fff;
+  color:$text-color;
   background-color: $primary;
   box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
@@ -10932,7 +10933,7 @@ ul.k-scheduler-views.k-state-expanded {
 
 .k-scheduler-edit-dialog {
   .k-dialog-buttongroup {
-    border-color: #495057;
+    border-color: $border-color;
   }
 }
 
@@ -10962,7 +10963,7 @@ ul.k-scheduler-views.k-state-expanded {
 
   border-color: inherit;
   color: $text-color;
-  background-color: #212529;
+  background-color: $bar-color;
 
   .k-scroll-button {
     background-color: $body-bg;
@@ -10989,7 +10990,7 @@ ul.k-scheduler-views.k-state-expanded {
   background-color: transparent;
 
   .k-timeline-flag {
-    color: #fff;
+    color:$text-color;
     background-color: $primary;
   }
 
@@ -11083,9 +11084,9 @@ ul.k-scheduler-views.k-state-expanded {
 
   .k-treemap-title {
     border-color: inherit;
-    border-color: #495057;
+    border-color: $border-color;
     color: $text-color;
-    background-color: #212529;
+    background-color: $bar-color;
   }
 
   .k-treemap-wrap {
@@ -11094,7 +11095,7 @@ ul.k-scheduler-views.k-state-expanded {
     background-color: inherit;
   }
 
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
@@ -11107,7 +11108,7 @@ ul.k-scheduler-views.k-state-expanded {
   }
 
   .k-leaf.k-state-hover {
-    box-shadow: inset 0 0 0 3px #495057;
+    box-shadow: inset 0 0 0 3px $border-color;
   }
 }
 
@@ -11214,7 +11215,7 @@ svg {
 }
 
 .k-var--accent-contrast {
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-var--primary {
@@ -11222,7 +11223,7 @@ svg {
 }
 
 .k-var--primary-contrast {
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-var--base {
@@ -11258,7 +11259,7 @@ svg {
 }
 
 .k-var--selected-text-color {
-  background-color: #fff;
+  background-color:$text-color;
 }
 
 .k-var--success {
@@ -11377,12 +11378,12 @@ svg {
 .k-handle {
   cursor: e-resize;
   border-color: $secondary;
-  color: #fff;
+  color:$text-color;
   background-color: $secondary;
 
   &:hover {
     border-color: #2f373d;
-    color: #fff;
+    color:$text-color;
     background-color: #343e44;
   }
 
@@ -11400,13 +11401,13 @@ svg {
 }
 
 .k-map {
-  border-color: #495057;
+  border-color: $border-color;
   color: $text-color;
   background-color: $body-bg;
 
   .k-navigator {
     border-color: $secondary;
-    color: #fff;
+    color:$text-color;
     background-color: $secondary;
   }
 
