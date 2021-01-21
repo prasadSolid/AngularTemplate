@@ -39,3 +39,22 @@ input[type="radio"] {
     background-color: $primary-color-light;
     border-color: $primary-color-light;
 }
+
+::-webkit-scrollbar {
+    background-color: $secondary-color;
+}
+::-webkit-scrollbar-track {
+    border: 1px solid $border-color;
+    border-top: none;
+    background-color: $secondary-color;
+    border-bottom: none;
+}
+::-webkit-scrollbar-thumb {
+    background: #8a949c;
+    border-radius: 6px;
+    border: 1px solid $border-color;
+}
+::-webkit-scrollbar-corner {
+    background-color: $content-bg;
+    border-color: $border-color;
+}
