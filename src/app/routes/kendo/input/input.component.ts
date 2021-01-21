@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-
+  // Editor
   public valueEditor = `
         <p>
             The Kendo Angular UI Editor allows your users to edit HTML in a familiar, user-friendly way.<br />
@@ -84,8 +84,15 @@ export class InputComponent implements OnInit {
   // Switch
   public checked = true;
 
- 
+  // Teaxt Area
+  //  public comment = '';
 
+  // Radio
+  public model = {
+    gender: null
+  };
+
+  
 
 
 

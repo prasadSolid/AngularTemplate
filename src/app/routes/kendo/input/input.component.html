@@ -309,6 +309,64 @@
       </div>
    </div>  
 </div>
+ <div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">TextBox</div>
+	   <div class="card-body">             
+			<kendo-textbox placeholder="Type your message here" [clearButton]="true">
+            <ng-template kendoTextBoxPrefixTemplate>
+                    <button kendoButton look="clear" icon="image"></button>
+                    <button kendoButton look="clear" [icon]="'calendar'"></button>
+                <kendo-textbox-separator></kendo-textbox-separator>
+            </ng-template>
+            <ng-template kendoTextBoxSuffixTemplate>
+                <kendo-textbox-separator></kendo-textbox-separator>
+                <button kendoButton look="clear" class="send-button">Send</button>
+            </ng-template>
+        </kendo-textbox>        
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">CheckBox</div>
+	   <div class="card-body">             
+         <input type="checkbox" [indeterminate]="true" [(ngModel)]="checked" kendoCheckBox />
+         <p>Checked: {{checked}}</p>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">Radio</div>
+	   <div class="card-body">             
+         <label class="k-label" [for]="male">Male</label>
+         <input type="radio" name="gender" value="Male" #male [(ngModel)]="model.gender" kendoRadioButton />
+ 
+         <label class="k-label" [for]="female">Female</label>
+         <input type="radio" name="gender" value="Female" #female [(ngModel)]="model.gender" kendoRadioButton />
+ 
+         <label class="k-label" [for]="other">Other</label>
+         <input type="radio" name="gender" value="Other" #other [(ngModel)]="model.gender" kendoRadioButton />
+       <p>Model: {{model | json}}</p>
+	   </div>
+	</div>  
+</div>
+<!-- <div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">xxx</div>
+	   <div class="card-body">             
+			<div class="example-config">
+            <p>Comments are required and must be at least 5 characters long.</p>
+            <p>Comment: {{ comment }} </p>
+        </div>
+        <form #templateForm="ngForm">
+            <kendo-label [for]="comments" text="Please leave a comment" class="customizing-label"></kendo-label>
+            <kendo-textarea #comments name="comments" [(ngModel)]="comment" required minlength="5" placeholder="Comment"></kendo-textarea>
+        </form>
+	   </div>
+	</div>  
+</div> -->
 
 
 
