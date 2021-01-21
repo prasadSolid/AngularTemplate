@@ -108,40 +108,268 @@
       </div>
    </div>         
 </div>
-<div class="col-xl-6">
+ <div class="col-xl-6">
    <div class="card card-default">
-      <div class="card-header">xxx</div>
-      <div class="card-body">
-        
-      </div>
-   </div>         
-</div>
-
-<div class="col-xl-6">
-   <div class="card card-default">
-      <div class="card-header">AutoComplete </div>
-      <div class="card-body">
-           <kendo-autocomplete
-               [data]="listItemsautocomplete"
-               [placeholder]="'e.g. Denmark'"
-               class="countries"
-           >
-           </kendo-autocomplete>
-      </div>
-   </div>         
-</div>
-
-<div class="col-xl-6">
-   <div class="card card-default">
-      <div class="card-header">Color Gradient</div>
+      <div class="card-header">Color Picker</div>
       <div class="card-body">             
-         <kendo-colorgradient
-               [(value)]="currentColor"
-         >
-         </kendo-colorgradient>
+         <div class="example-config">
+            <div>
+                <input type="checkbox" class="k-checkbox" id="open-controller" [(ngModel)]="preventOpen">
+                <label class="k-checkbox-label" for="open-controller">Prevent Opening</label>
+            </div>
+            <div>
+                <input type="checkbox" class="k-checkbox" id="close-controller" [(ngModel)]="preventClose">
+                <label class="k-checkbox-label" for="close-controller">Prevent Closing</label>
+            </div>
+        </div>
+        <div>
+            <kendo-colorpicker
+                (valueChange)="log('valueChange', $event)"
+                (open)="handlePreventableEvent('open', $event, preventOpen)"
+                (close)="handlePreventableEvent('close', $event, preventClose)"
+                (focus)="log('focus', $event)"
+                (blur)="log('blur', $event)"
+            >
+            </kendo-colorpicker>
+        </div>
       </div>
    </div>  
 </div>
+<div class="col-xl-6">
+   <div class="card card-default">
+      <div class="card-header">Masked TextBox </div>
+      <div class="card-body">             
+         <p>Enter phone number</p>
+         <kendo-maskedtextbox [mask]="mask" [value]="value"></kendo-maskedtextbox>
+      </div>
+   </div>  
+</div>
+
+<div class="col-xl-6">
+   <div class="card card-default">
+      <div class="card-header">Numeric TextBox </div>
+      <div class="card-body">
+         <kendo-numerictextbox
+            [value]="valuenumerictextbox" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+
+        <h6>Decimal</h6>
+        <kendo-numerictextbox
+            [format]="'n2'"
+            [value]="value"
+        ></kendo-numerictextbox>
+
+        <h6>Percentage</h6>
+        <kendo-numerictextbox
+            [format]="'p'"
+            [step]="0.1"
+            [min]="0"
+            [max]="1"
+            [value]="percentage"
+        ></kendo-numerictextbox>
+
+        <h6>Currency</h6>
+        <kendo-numerictextbox
+            [format]="'c0'"
+            [min]="0"
+            [value]="value"
+        ></kendo-numerictextbox>
+
+        <h6>Currency with format options</h6>
+        <kendo-numerictextbox
+            [format]="formatOptions"
+            [value]="value"
+            [min]="0"
+        ></kendo-numerictextbox>
+      </div>
+   </div>         
+</div>
+<div class="col-xl-6">
+   <div class="card card-default">
+      <div class="card-header">Slider  </div>
+      <div class="card-body">
+         <div style="height: 300px; text-align: center;">
+            <p>EQUALIZER</p>
+            <div class="eqSlider">
+                <kendo-slider
+                    [vertical]="true"
+                    [showButtons]="false"
+                    [min]="min"
+                    [max]="max"
+                    [smallStep]="smallStep"
+                    [largeStep]="largeStep"
+                    [(ngModel)] = "valuesVertical[0]"
+                ></kendo-slider>
+                <p>{{ valuesVertical[0] }}</p>
+            </div>
+            <div class="eqSlider">
+                <kendo-slider
+                    [vertical]="true"
+                    [showButtons]="false"
+                    [min]="min"
+                    [max]="max"
+                    [smallStep]="smallStep"
+                    [largeStep]="largeStep"
+                    [(ngModel)] = "valuesVertical[1]"
+                ></kendo-slider>
+                <p>{{ valuesVertical[1] }}</p>
+            </div>
+            <div class="eqSlider">
+                <kendo-slider
+                    [vertical]="true"
+                    [showButtons]="false"
+                    [min]="min"
+                    [max]="max"
+                    [smallStep]="smallStep"
+                    [largeStep]="largeStep"
+                    [(ngModel)] = "valuesVertical[2]"
+                ></kendo-slider>
+                <p>{{ valuesVertical[2] }}</p>
+            </div>
+            <div class="eqSlider">
+                <kendo-slider
+                    [vertical]="true"
+                    [showButtons]="false"
+                    [min]="min"
+                    [max]="max"
+                    [smallStep]="smallStep"
+                    [largeStep]="largeStep"
+                    [(ngModel)] = "valuesVertical[3]"
+                ></kendo-slider>
+                <p>{{ valuesVertical[3] }}</p>
+            </div>
+            <div class="eqSlider">
+                <kendo-slider
+                    [vertical]="true"
+                    [showButtons]="false"
+                    [min]="min"
+                    [max]="max"
+                    [smallStep]="smallStep"
+                    [largeStep]="largeStep"
+                    [(ngModel)] = "valuesVertical[4]"
+                ></kendo-slider>
+                <p>{{ valuesVertical[4] }}</p>
+            </div>
+
+        </div>
+        <div style="text-align: center;">
+            <p>BALANCE</p>
+            <div>
+                <kendo-slider
+                    [fixedTickWidth]="10"
+                    [min]="-10"
+                    [max]="10"
+                    [smallStep]="smallStep"
+                    [(ngModel)] = "valueHorizontal"
+                >
+                    <kendo-slider-messages
+                        increment="Right"
+                        decrement="Left"
+                    ></kendo-slider-messages>
+                </kendo-slider>
+            </div>
+            <div>{{ valueHorizontal }}</div>
+        </div>
+      </div>
+   </div>         
+</div>
+<div class="col-xl-6">
+   <div class="card card-default">
+      <div class="card-header">Range Slider </div>
+      <div class="card-body">             
+         <p>Choose a Price Range</p>
+         <kendo-rangeslider
+             [(ngModel)]="valuerangeslider"
+             [min]="minrangeslider"
+             [max]="maxrangeslider"
+             [smallStep]="smallSteprangeslider"
+             [largeStep]="largeSteprangeslider"
+             ></kendo-rangeslider>
+         <p style="margin-top: 20px;">Selected Range {{value[0]}} - {{value[1]}}</p>
+         <div>
+            <label>Toggle orientation
+                <input type="checkbox" kendoCheckBox [(ngModel)]="vertical" />
+            </label>
+        </div>
+        <kendo-rangeslider
+            [vertical]="vertical"
+            [min]="minorientation"
+            [max]="maxorientation"
+            [largeStep]="largeSteporientation"
+            [(ngModel)] = "valueorientation"         
+        ></kendo-rangeslider>
+      </div>
+   </div>  
+</div>
+<div class="col-xl-6">
+   <div class="card card-default">
+      <div class="card-header">Switch </div>
+      <div class="card-body">             
+         <kendo-switch [(ngModel)]="checked"></kendo-switch>
+      </div>
+   </div>  
+</div>
+ <div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">TextBox</div>
+	   <div class="card-body">             
+			<kendo-textbox placeholder="Type your message here" [clearButton]="true">
+            <ng-template kendoTextBoxPrefixTemplate>
+                    <button kendoButton look="clear" icon="image"></button>
+                    <button kendoButton look="clear" [icon]="'calendar'"></button>
+                <kendo-textbox-separator></kendo-textbox-separator>
+            </ng-template>
+            <ng-template kendoTextBoxSuffixTemplate>
+                <kendo-textbox-separator></kendo-textbox-separator>
+                <button kendoButton look="clear" class="send-button">Send</button>
+            </ng-template>
+        </kendo-textbox>        
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">CheckBox</div>
+	   <div class="card-body">             
+         <input type="checkbox" [indeterminate]="true" [(ngModel)]="checked" kendoCheckBox />
+         <p>Checked: {{checked}}</p>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">Radio</div>
+	   <div class="card-body">             
+         <label class="k-label" [for]="male">Male</label>
+         <input type="radio" name="gender" value="Male" #male [(ngModel)]="model.gender" kendoRadioButton />
+ 
+         <label class="k-label" [for]="female">Female</label>
+         <input type="radio" name="gender" value="Female" #female [(ngModel)]="model.gender" kendoRadioButton />
+ 
+         <label class="k-label" [for]="other">Other</label>
+         <input type="radio" name="gender" value="Other" #other [(ngModel)]="model.gender" kendoRadioButton />
+       <p>Model: {{model | json}}</p>
+	   </div>
+	</div>  
+</div>
+<!-- <div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">xxx</div>
+	   <div class="card-body">             
+			<div class="example-config">
+            <p>Comments are required and must be at least 5 characters long.</p>
+            <p>Comment: {{ comment }} </p>
+        </div>
+        <form #templateForm="ngForm">
+            <kendo-label [for]="comments" text="Please leave a comment" class="customizing-label"></kendo-label>
+            <kendo-textarea #comments name="comments" [(ngModel)]="comment" required minlength="5" placeholder="Comment"></kendo-textarea>
+        </form>
+	   </div>
+	</div>  
+</div> -->
+
+
+
 
 </div>
 

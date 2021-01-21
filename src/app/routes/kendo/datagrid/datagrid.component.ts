@@ -10,6 +10,7 @@ import { sampleProducts } from './products';
 })
 export class DatagridComponent implements OnInit {
 
+
       public state: State = {
         skip: 0,
         take: 5,
@@ -27,6 +28,7 @@ export class DatagridComponent implements OnInit {
         this.state = state;
         this.gridData = process(sampleProducts, this.state);
     }
+
   constructor() { }
 
   ngOnInit(): void {
