@@ -3,6 +3,21 @@
 </div>
 <div class="row">
    <div class="col-xl-6">
+      <div class="card card-default">
+         <div class="card-header">Textarea</div>
+         <div class="card-body">             
+            <div class="example-config">
+               <p>Comments are required and must be at least 5 characters long.</p>
+               <p>Comment: {{ comment }} </p>
+           </div>
+           <form #templateForm="ngForm">
+               <kendo-label [for]="comments" text="Please leave a comment" class="customizing-label"></kendo-label>
+               <kendo-textarea #comments name="comments" [(ngModel)]="comment" required minlength="5" placeholder="Comment"></kendo-textarea>
+           </form>
+         </div>
+      </div>  
+   </div> 
+   <div class="col-xl-6">
        <div class="card card-default">
           <div class="card-header">Date Picker</div>
           <div class="card-body">
@@ -352,21 +367,7 @@
 	   </div>
 	</div>  
 </div>
-<!-- <div class="col-xl-6">
-	<div class="card card-default">
-	   <div class="card-header">xxx</div>
-	   <div class="card-body">             
-			<div class="example-config">
-            <p>Comments are required and must be at least 5 characters long.</p>
-            <p>Comment: {{ comment }} </p>
-        </div>
-        <form #templateForm="ngForm">
-            <kendo-label [for]="comments" text="Please leave a comment" class="customizing-label"></kendo-label>
-            <kendo-textarea #comments name="comments" [(ngModel)]="comment" required minlength="5" placeholder="Comment"></kendo-textarea>
-        </form>
-	   </div>
-	</div>  
-</div> -->
+
 
 
 

@@ -1,1 +1,312 @@
-<p>buttons works!</p>
+<div class="content-heading">
+    <div>Buttons</div>
+</div>
+<div class="row">
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">Button</div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Default Button</p>
+                <p class="k-block">
+                <button kendoButton (click)="onButtonClick()">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder"></button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Flat Button</p>
+                <p class="k-block">
+                <button kendoButton (click)="onButtonClick()" look="flat">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="flat">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="flat"></button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Outline Button</p>
+                <p class="k-block">
+                <button kendoButton (click)="onButtonClick()" look="outline">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="outline">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="outline"></button>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Clear Button</p>
+                <p class="k-block">
+                <button kendoButton (click)="onButtonClick()" look="clear">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="clear">Browse</button>
+                <button kendoButton (click)="onButtonClick()" icon="folder" look="clear"></button>
+                </p>
+            </div>
+        </div>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">Button Icon</div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>Kendo UI font icon</p>
+              <button kendoButton icon="calendar">Events</button>
+              <button kendoButton icon="calendar"></button>
+            </div>  
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>FontAwsome icon</p>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+              <button kendoButton iconClass="fa fa-calendar fa-fw">Events</button>
+              <button kendoButton iconClass="fa fa-calendar fa-fw"></button>
+            </div>  
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>Image icon</p>
+              <button kendoButton imageUrl="https://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png">Snowboarding</button>
+              <button kendoButton imageUrl="https://demos.telerik.com/kendo-ui/content/shared/icons/sports/snowboarding.png"></button>
+            </div>
+          </div>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">Button Group</div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-sm-12 col-md-4 example-col">
+              <p>Icons only</p>
+              <kendo-buttongroup>
+                  <button kendoButton [toggleable]="true" icon="bold"></button>
+                  <button kendoButton [toggleable]="true" icon="italic"></button>
+                  <button kendoButton [toggleable]="true" icon="underline"></button>
+              </kendo-buttongroup>
+            </div>
+            <div class="col-sm-12 col-md-4 example-col">
+              <p>Text only</p>
+              <kendo-buttongroup>
+                <button kendoButton [toggleable]="true">
+                  Bold
+                </button>
+                <button kendoButton [toggleable]="true">
+                  Italic
+                </button>
+                <button kendoButton [toggleable]="true">
+                  Underline
+                </button>
+              </kendo-buttongroup>
+            </div>
+            <div class="col-sm-12 col-md-4 example-col">
+              <p>Icons + Text</p>
+              <kendo-buttongroup>
+                  <button kendoButton [toggleable]="true" icon="bold">Bold</button>
+                  <button kendoButton [toggleable]="true" icon="italic">Italic</button>
+                  <button kendoButton [toggleable]="true" icon="underline">Underline</button>
+              </kendo-buttongroup>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 example-col">
+              <p>Buttons with responsive width</p>
+              <kendo-buttongroup width="100%">
+                  <button kendoButton [toggleable]="true" icon="bold">Bold</button>
+                  <button kendoButton [toggleable]="true" icon="italic">Italic</button>
+                  <button kendoButton [toggleable]="true" icon="underline">Underline</button>
+              </kendo-buttongroup>
+            </div>
+          </div>
+	   </div>
+	</div>  
+</div>
+
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">Collection of Buttons</div>
+	   <div class="card-body">             
+        <div class="teamMate">
+            <img [src]="img" alt="Nancy Leverling" />
+            <span
+              class="k-icon k-i-circle status"
+              [ngStyle]="{ color: status }"
+            ></span>
+            <span class="mate-info">
+              <h2>Nancy Leverling</h2>
+              <p>Team Lead</p>
+            </span>
+          </div>
+      
+          <kendo-buttongroup width="100%" selection="single">
+            <button
+              *ngFor="let button of buttons"
+              kendoButton
+              [toggleable]="true"
+              [selected]="button.selected"
+              (selectedChange)="selectedChange($event, button)"
+            >
+              <span>
+                <span class="k-icon {{ button.icon }}"></span>
+                {{ button.text }}
+              </span>
+            </button>
+          </kendo-buttongroup>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">Chip</div>
+	   <div class="card-body">             
+        <div class="k-block">
+            <kendo-chip
+                *ngFor="let contact of selectedContacts"
+                [label]="contact.label"
+                [removable]="true"
+                [iconClass]="contact.iconClass"
+                (remove)="onRemove($event)"
+            >
+            </kendo-chip>
+            <div class="example">
+                <kendo-autocomplete
+                    #contactslist
+                    [data]="contacts"
+                    class="contacts"
+                    valueField="label"
+                    [kendoDropDownFilter]="{operator: 'contains'}"
+                    [filterable]="true"
+                    placeholder="To: Email Adress*"
+                    (valueChange)="valueChange($event)"
+                >
+                </kendo-autocomplete>
+                <textarea class="k-textarea">Hi there! Don’t miss out our dinner party!</textarea>
+            </div>
+        </div>        
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">ChipList</div>
+	   <div class="card-body">             
+            <kendo-buttongroup class="meals" selection="single">
+                <button kendoButton *ngFor="let meal of meals" [toggleable]="true" [selected]="meal.selected" (click)="selectedMeal(meal)">
+                    <div class="meal-icon">{{ meal.icon }}</div>
+                    {{ meal.name }}
+                </button>
+            </kendo-buttongroup>
+            <div class="separator">
+                <kendo-chip-list selection="multiple">
+                    <div>Add more:</div>
+                    <kendo-chip *ngFor="let addition of additions" [label]="addition.label"> </kendo-chip>
+                </kendo-chip-list>
+            </div>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-6">
+	<div class="card card-default">
+	   <div class="card-header">SplitButton </div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+              <p>Default Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="datasplitbutton" icon="paste">
+                    Paste
+                </kendo-splitbutton>
+                </div>
+    
+                <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Flat Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="datasplitbutton" icon="paste" look="flat">
+                    Paste
+                </kendo-splitbutton>
+                </div>
+    
+                <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+                <p>Outline Button</p>
+                <kendo-splitbutton (buttonClick)="onPaste()" [data]="datasplitbutton" icon="paste" look="outline">
+                    Paste
+                </kendo-splitbutton>
+            </div>
+          </div>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">DropDownButton</div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+              <p>Default Button</p>
+              <p class="k-block">
+                  <kendo-dropdownbutton [data]="data">
+                      User Settings
+                  </kendo-dropdownbutton>
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+              <p>Primary Button</p>
+              <p class="k-block">
+                  <kendo-dropdownbutton [data]="data" [primary]="true">
+                      User Settings
+                  </kendo-dropdownbutton>
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+              <p>Outline Button</p>
+              <p class="k-block">
+                  <kendo-dropdownbutton [data]="data" look="outline">
+                      User Settings
+                  </kendo-dropdownbutton>
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
+              <p>Bare Button</p>
+              <p class="k-block">
+                  <kendo-dropdownbutton [data]="data" look="bare">
+                      User Settings
+                  </kendo-dropdownbutton>
+              </p>
+            </div>
+          </div>
+	   </div>
+	</div>  
+</div>
+<div class="col-xl-12">
+	<div class="card card-default">
+	   <div class="card-header">Icon Dropdown</div>
+	   <div class="card-body">             
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>Kendo UI font icon</p>
+              <kendo-dropdownbutton [data]="settings" [icon]="icon">
+                  User Settings
+              </kendo-dropdownbutton>
+              <kendo-dropdownbutton [data]="settings" [icon]="icon"></kendo-dropdownbutton>
+            </div>
+  
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>FontAwsome icon</p>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+              <kendo-dropdownbutton [data]="settings" [iconClass]="iconClass">
+                  User Settings
+              </kendo-dropdownbutton>
+              <kendo-dropdownbutton [data]="settings" [iconClass]="iconClass"></kendo-dropdownbutton>
+            </div>
+  
+            <div class="col-xs-12 col-sm-6 col-md-4 example-col">
+              <p>Image icon</p>
+              <kendo-dropdownbutton [data]="bookmarks" [imageUrl]="imageUrl">
+                  Bookmarks
+              </kendo-dropdownbutton>
+              <kendo-dropdownbutton [data]="bookmarks" [imageUrl]="imageUrl"></kendo-dropdownbutton>
+            </div>
+          </div>
+	   </div>
+	</div>  
+</div>
+
+
+
+
+
+</div>

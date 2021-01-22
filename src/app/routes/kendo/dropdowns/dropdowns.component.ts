@@ -64,7 +64,28 @@ export class DropdownsComponent implements OnInit {
   public listItemscombobox: Array<string> = ['Baseball', 'Basketball', 'Cricket', 'Field Hockey', 'Football', 'Table Tennis', 'Tennis', 'Volleyball'];
   public listItemsdropdownlist: Array<string> = ['X-Small', 'Small', 'Medium', 'Large', 'X-Large', '2X-Large'];
 
+  // Dropdown Tree
+  // public datadt: any[] = [
+  //   {
+  //     textdt: 'Furniture', iddt: 1, itemsdt: [
+  //       { textdt: 'Tables & Chairs', iddt: 2 },
+  //       { textdt: 'Sofas', iddt: 3 },
+  //       { textdt: 'Occasional Furniture', iddt: 4 }
+  //     ]
+  //   },
+  //   {
+  //     textdt: 'Decor', iddt: 5, itemsdt: [
+  //       { textdt: 'Bed Linen', iddt: 6 },
+  //       { textdt: 'Carpets', iddt: 7 }
+  //     ]
+  //   }
+  // ];
 
+  // MultiComboBox
+  // public contacts: Contact[] = contacts;
+  // public getContactImageUrl(contactId: string): string {
+  //     return `https://www.telerik.com/kendo-angular-ui-develop/components/dropdowns/assets/contacts/${contactId}.jpg`;
+  // }
 
 
 

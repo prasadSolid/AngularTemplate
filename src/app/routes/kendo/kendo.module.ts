@@ -16,8 +16,10 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { InputsModule } from '@progress/kendo-angular-inputs';
-import { LayoutModule } from '@progress/kendo-angular-layout';
+
 import { ButtonsComponent } from './buttons/buttons.component';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
+
 
 const routes: Routes = [
     { path: '', component: InputComponent },
@@ -44,7 +46,7 @@ const routes: Routes = [
     GridModule, 
     SchedulerModule,
     InputsModule,
-    LayoutModule,
+    ButtonsModule,
     
     RouterModule.forChild(routes),
   ],

@@ -74,7 +74,7 @@ export class InputComponent implements OnInit {
   public largeSteprangeslider = 2;
   public smallSteprangeslider = 20;
   public verticalrangeslider = true;
-  // orientation  
+  // Range Slider orientation  
   public vertical = true;
   public valueorientation: [number, number] = [3, 5];
   public minorientation = 0;
@@ -85,7 +85,7 @@ export class InputComponent implements OnInit {
   public checked = true;
 
   // Teaxt Area
-  //  public comment = '';
+   public comment = '';
 
   // Radio
   public model = {
