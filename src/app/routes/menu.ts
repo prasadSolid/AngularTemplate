@@ -299,6 +299,10 @@ const Kendo={
             text: 'Scheduler',
             link: '/kendo/scheduler'
         },
+        {
+            text: 'Buttons',
+            link: '/kendo/buttons'
+        },
     ]
 }
 
