@@ -16,6 +16,8 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { InputsModule } from '@progress/kendo-angular-inputs';
+import { LayoutModule } from '@progress/kendo-angular-layout';
+import { ButtonsComponent } from './buttons/buttons.component';
 
 const routes: Routes = [
     { path: '', component: InputComponent },
@@ -24,11 +26,12 @@ const routes: Routes = [
     { path: 'datagrid', component: DatagridComponent },
     { path: 'dropdown', component: DropdownsComponent },
     { path: 'scheduler', component: SchedulerComponent },
+    { path: 'buttons', component: ButtonsComponent },
 
 ];
 
 @NgModule({
-  declarations: [InputComponent, ChartsComponent, SchedulerComponent, DatagridComponent, DropdownsComponent],
+  declarations: [InputComponent, ChartsComponent, SchedulerComponent, DatagridComponent, DropdownsComponent, ButtonsComponent],
   imports: [
     CommonModule,
     DateInputsModule,
@@ -41,6 +44,7 @@ const routes: Routes = [
     GridModule, 
     SchedulerModule,
     InputsModule,
+    LayoutModule,
     
     RouterModule.forChild(routes),
   ],
