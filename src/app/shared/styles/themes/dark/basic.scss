@@ -58,3 +58,7 @@ input[type="radio"] {
     background-color: $content-bg;
     border-color: $border-color;
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: $content-bg;
+}
