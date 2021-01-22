@@ -85,7 +85,7 @@ export class InputComponent implements OnInit {
   public checked = true;
 
   // Teaxt Area
-  //  public comment = '';
+   public comment = '';
 
   // Radio
   public model = {
