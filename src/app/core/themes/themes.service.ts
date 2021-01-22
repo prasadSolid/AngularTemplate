@@ -14,7 +14,7 @@ const themeDark = require('../../shared/styles/themes/theme-dark.scss');
 export class ThemesService {
 
     styleTag: any;
-    defaultTheme: string = 'A';
+    defaultTheme: string = 'Dark';
 
     constructor() {
         this.createStyle();

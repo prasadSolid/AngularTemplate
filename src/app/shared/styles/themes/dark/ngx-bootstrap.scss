@@ -1,0 +1,176 @@
+// nav tabs
+//Nav tabs
+.tab-container {
+    .nav-tabs {
+        border-bottom-color: $border-color;
+        .nav-item {
+            .nav-link {
+                background-color: $content-bg;
+                color: $main-text;
+                border-color: $border-color;
+                &.active {
+                    background-color: $panel-bg;
+                    border-bottom-color: $panel-bg;
+                    &:hover {
+                        border-bottom-color: $panel-bg;
+                    }
+                    &:focus {
+                        border-bottom-color: $panel-bg;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        border-color: $border-color;
+        background-color: $panel-bg;
+    }
+}
+
+// Date picker
+.bs-datepicker {
+    background: $content-bg !important;
+    box-shadow: 0 0 10px 0 $content-bg !important;
+    .bs-datepicker-container {
+        .bs-datepicker-head {
+            background: $panel-bg;
+        }
+        .bs-datepicker-body  {
+            background: $content-bg;
+            border-color: $border-color;
+            table {
+                td {
+                    color: $main-text !important;
+                    span {
+                        &.is-other-month {
+                            color: $default-color;
+                        }
+                        &.selected {
+                            background-color: $secondary-color;
+                        } 
+                        &.is-highlighted:not(.disabled):not(.selected) {
+                            background-color: $default-color !important;
+                        }
+                    }
+                    &.is-other-month {
+                        span {
+                            color: $default-color;
+                        }                        
+                    }
+                }
+                &.days {
+                    span {
+                        &.in-range {
+                            &:not(.select-start) {
+                                &:before {
+                                    background: $default-color;
+                                }
+                            }
+                            &.select-end {
+                                &:before {
+                                    background: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dropdown
+.dropdown-menu {
+    background-color: $content-bg;
+    border-color: $border-color;
+    .dropdown-item {
+        color: $main-text;
+        &:hover {
+            background-color: $secondary-color;
+        }
+        &:focus {
+            background-color: $secondary-color;
+        }
+    }
+    .dropdown-divider {
+        border-top-color: $border-color;
+    }    
+}
+
+//pagination
+.pagination {
+    .page-item{
+        .page-link{
+            background-color: $secondary-color;
+            border-color: $border-color;
+            color: $main-text;
+        }
+        &.active{
+            .page-link{
+                background-color: $panel-bg;
+                border-color: $border-color;
+            }
+        }
+    }
+}
+.pager {
+    li {
+        a {
+            color: $main-text;
+        }
+    }
+    .disabled {
+        a {            
+            color: darken($main-text, 80%);
+        }
+    }
+}
+
+// Popover 
+.popover {
+    background-color: $panel-bg;
+    box-shadow: 0 0 0 #000;
+    border-color: $border-color;
+    .popover-header {
+        background-color: $secondary-color;
+    }
+    .popover-body {
+        color: $main-text;
+    }
+    &.bs-popover-top {
+        .arrow::after {
+            border-top-color: $border-color;
+        }
+    }
+    &.bs-popover-right {
+        .arrow::after {
+            border-right-color: $border-color;
+        }
+    }
+    &.bs-popover-left {
+        .arrow::after {
+            border-left-color: $border-color;
+        }
+    }
+    &.bs-popover-bottom {
+        .arrow::after {
+            border-bottom-color: $border-color;
+        }
+    }
+}
+
+// Progress
+.progress {
+    background-color: $content-bg;
+    border-color: $border-color;
+    .bg-success {
+        background-color: $success-color;
+    }
+}
+
+// Typea Head
+.typeahead-ctrl {
+    .card-header{
+        color: $main-text;
+    }  
+}
