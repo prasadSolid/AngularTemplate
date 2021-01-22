@@ -2544,7 +2544,7 @@ div.k-scrollview {
 
 .k-selection-single {
   .k-chip-selected.k-chip-filled {
-    border-color: rgba(0, 0, 0, 0);
+    border-color: $border-color;
     color: $primary;
     background-color: rgba(0, 87, 142, 0.12);
   }
@@ -2566,56 +2566,56 @@ div.k-scrollview {
 }
 
 .k-chip-filled {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: $border-color;
   color: $text-color;
-  background-color: #e4e7eb;
+  background-color: $body-bg;
 
   &:hover {
-    background-color: #ced3db;
-    border-color: rgba(0, 0, 0, 0);
+    background-color:$body-bg;
+    border-color: $border-color;
   }
 
   &:focus {
-    background-color: #e4e7eb;
+    background-color:$body-bg;
     box-shadow: 0 0 0 3px rgba(228, 231, 235, 0.5);
   }
 }
 
 .k-chip-filled.k-chip-hover {
-  background-color: #ced3db;
-  border-color: rgba(0, 0, 0, 0);
+  background-color: $body-bg;
+  border-color: $border-color;
 }
 
 .k-chip-filled.k-chip-focused {
-  background-color: #e4e7eb;
+  background-color:$body-bg;
   box-shadow: 0 0 0 3px rgba(228, 231, 235, 0.5);
 }
 
 .k-chip-filled.k-chip-selected {
-  background-color: #c7cdd5;
-  border-color: rgba(0, 0, 0, 0);
+  background-color:$body-bg;
+  border-color: $border-color;
 }
 
 .k-chip-filled.k-chip-success {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: $border-color;
   color: $success;
   background-color: rgba(125, 183, 129, 0.15);
 }
 
 .k-chip-filled.k-chip-warning {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: $border-color;
   color: $warning;
   background-color: rgba(193, 147, 104, 0.15);
 }
 
 .k-chip-filled.k-chip-error {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: $border-color;
   color: $danger;
   background-color: rgba(211, 135, 135, 0.15);
 }
 
 .k-chip-filled.k-chip-info {
-  border-color: rgba(0, 0, 0, 0);
+  border-color: $border-color;
   color: $info;
   background-color: rgba(97, 147, 173, 0.15);
 }
