@@ -81,13 +81,15 @@ export class ChartsComponent implements OnInit {
     amount: -18000
   }, {
     period: 'Jun',
-    amount: 10000
+    amount: 10000,
+    color: '#f00000'
   }, {
     period: 'Q2',
     summary: 'runningTotal'
   }, {
     period: 'Ending\\nBalance',
-    summary: 'total'
+    summary: 'total',
+    // color: '#f00000'
   }];
 
   public pointColor(point: any): string {
@@ -113,7 +115,7 @@ export class ChartsComponent implements OnInit {
     public labelsVisual(args: LegendItemVisualArgs): Element {
         if (args.series.name === '2019') {
             // Create rectangular shape on top of which the label will be drawn
-            const rectOptions = { stroke: { width: 2, color: '#fff' }, fill: { color: '#fff' } };
+            const rectOptions = { stroke: { width: 0, color: '#fff' }, fill: { color: 'transparent' } };
             const rectGeometry = new Rect(new Point(0, 3), new Size(60, 10));
             const rect: RectShape = new RectShape(rectGeometry, rectOptions);
 
@@ -160,6 +162,30 @@ export class ChartsComponent implements OnInit {
         return args.createVisual();
     }
   
+
+
+
+    // Common Styles
+    public majorTicks = {
+      color: '#909FA7',
+    }
+    public majorGridLines = {
+      color: '#909FA7',
+      visible: true
+    }
+    public line = {
+      color: '#909FA7',
+    };
+    public title = {
+      color: '#909FA7',
+      padding: 10
+    }
+    public labels = {
+      color: '#909FA7',
+    };
+
+
+    
   constructor() { }
 
   ngOnInit(): void {
