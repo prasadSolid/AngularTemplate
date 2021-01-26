@@ -147,6 +147,18 @@ public onPaste(): void {
 //      this.selectedContacts.splice(index, 1);
 //  }
 
+
+
+ // Floating Action button
+//  public imageSrc = '0002 ';
+
+//  public addToQueue(): void {
+//      console.log('Added to queue!');
+//  }
+
+public disabled = true;
+
+
   constructor() { }
 
   ngOnInit(): void {

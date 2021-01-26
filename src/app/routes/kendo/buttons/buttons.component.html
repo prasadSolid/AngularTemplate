@@ -9,8 +9,12 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-3 example-col">
                 <p>Default Button</p>
+
+                <button kendoButton (click)="onButtonClick()" [primary]="true" [disabled]="true">Apply</button>
+                <button kendoButton (click)="onButtonClick()" [disabled]="true">Cancel</button>
+
                 <p class="k-block">
-                <button kendoButton (click)="onButtonClick()">Browse</button>
+                <button kendoButton (click)="onButtonClick()" [disabled]="disabled">Browse</button>
                 <button kendoButton (click)="onButtonClick()" icon="folder">Browse</button>
                 <button kendoButton (click)="onButtonClick()" icon="folder"></button>
                 </p>
@@ -307,6 +311,23 @@
 
 
 
+<div class="k-card k-card-vertical">
+    <img [src]="imageSrc" class="k-card-media">
+    <div class="k-card-body">
+
+        <kendo-floatingactionbutton
+            text="Add to Queue"
+            [offset]="{ y: '175px' }"
+            [align]="{ horizontal: 'end', vertical: 'top' }"
+            positionMode="absolute"
+            (click)="addToQueue()"
+        >
+        </kendo-floatingactionbutton>
+
+        <h2 class="k-card-title">Summer Mix 2020</h2>
+        <p class="k-card-subtitle">DJ Peril</p>
+    </div>
+</div>
 
 
 </div>
