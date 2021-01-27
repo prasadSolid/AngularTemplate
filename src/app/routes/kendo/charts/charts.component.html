@@ -123,12 +123,8 @@
           <div class="card-header">Pie</div>
           <div class="card-body">             
               <kendo-chart>    
-                <kendo-chart-title text="World Population by Broad Age Groups" color="#909FA7"></kendo-chart-title>                
-                  <kendo-chart-legend               
-                    [background]="'background'"
-                    [position]="'bottom'"
-                  >
-                  </kendo-chart-legend>
+                <kendo-chart-title text="World Population by Broad Age Groups" color="#909FA7"></kendo-chart-title>  
+                  <kendo-chart-legend [position]="'bottom'"></kendo-chart-legend>
                   <kendo-chart-series>
                     <kendo-chart-series-item
                         type="pie"
@@ -198,7 +194,7 @@
                     <kendo-chart-series-item *ngFor="let series of data" [type]="series.type" [name]="series.name" [dashType]="series.dashType" [data]="series.data">
                     </kendo-chart-series-item>
                 </kendo-chart-series>
-                <kendo-chart-legend position="bottom" orientation="horizontal" [background]="'background'">
+                <kendo-chart-legend position="bottom" orientation="horizontal">
                     <kendo-chart-legend-item [visual]="labelsVisual" [cursor]="'pointer'">
                     </kendo-chart-legend-item>
                 </kendo-chart-legend>
