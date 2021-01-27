@@ -183,7 +183,9 @@ export class ChartsComponent implements OnInit {
     public labels = {
       color: '#909FA7',
     };
-
+    public legend = {
+      color: '#f00',
+    };
 
     
   constructor() { }
